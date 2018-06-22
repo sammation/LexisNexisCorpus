@@ -8,7 +8,7 @@ if __name__ == "__main__":
     counts = {}
     for zip_file in get_all_state_zips(): 
         num = zip_file[:-4] 
-        with open(os.path.join(repo_dir,"tags") + num+"_tags.json") as injson:
+        with open(f"../tags/{num}_tags.json") as injson:
             curr_tags = json.load(injson)
 
 
