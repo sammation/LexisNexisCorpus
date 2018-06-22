@@ -15,7 +15,7 @@ if __name__ == "__main__":
                 curr_tags = json.load(injson)
                 file_counts[zip_file] = len(curr_tags) 
                 for fn, tags in curr_tags.items():
-                    curr_fullCaseName = tags.get("fullCaseName",0)
+                    curr_fullCaseName += tags.get("fullCaseName",0)
                 fullCaseName_counts[zip_file] = curr_fullCaseName
         except FileNotFoundError:
             pass
@@ -23,3 +23,4 @@ if __name__ == "__main__":
     states["file_count"] = states["zip"].map(file_counts)
     states["fullCaseName_count"] = states["zip"].map(fullCaseName_counts)
 
+    states.to_csv(os.path.join(repo_dir,"state_counts.csv"),index=False)
