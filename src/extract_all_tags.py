@@ -37,35 +37,36 @@ def unzip_file(zip_fn):
     zip_ref = zf.ZipFile(os.path.join(repo_dir, zip_fn), 'r')
     zip_ref.extractall(repo_dir)
     zip_ref.close()
-    
-for zipfile in get_all_state_zips(): 
-    if zipfile.endswith(".zip"):
-        num = zipfile[:-4]
-        try:
-            tags = dict() 
-            print("copying",zipfile)
-            copy_zip_file(zipfile)
-            print("unzipping",zipfile)
-            unzip_file(zipfile)
-            print("extracting tags")
-            for filename in os.listdir(os.path.join(repo_dir, 'content',num)):
-                if os.path.isfile(os.path.join(repo_dir, 'content',num,filename)):
-                    with open(os.path.join(repo_dir, 'content', num, filename)) as infile: 
-                        tags[filename] = defaultdict(int)
-                        for match in re.findall(r"</.*?>", infile.read()):
-                            tags[filename][match[2:-1]] += 1
-            print("deleting",zipfile)
-            delete_zip_file(zipfile)
-            print("deleting", os.path.join(repo_dir, 'content',num))
-            delete_unzipped_folder(os.path.join(repo_dir, 'content',num))
-            print("writing tags to", os.path.join(repo_dir, "tags", num+"_tags.json"))
-            with open(os.path.join(repo_dir, "tags", num+"_tags.json"), 'w') as outfile:
-                json.dump(tags, outfile, indent = 1)
-        except KeyboardInterrupt: 
-            exit()
-        except:
-            errorzips.append(zipfile)
 
-with open(os.path.join(repo_dir, "error_zips.txt"), 'w') as outfile: 
-    outfile.write('\n'.join(errorzips))
-    
+if __name__ == "__main__":
+    for zipfile in get_all_state_zips(): 
+        if zipfile.endswith(".zip"):
+            num = zipfile[:-4]
+            try:
+                tags = dict() 
+                print("copying",zipfile)
+                copy_zip_file(zipfile)
+                print("unzipping",zipfile)
+                unzip_file(zipfile)
+                print("extracting tags")
+                for filename in os.listdir(os.path.join(repo_dir, 'content',num)):
+                    if os.path.isfile(os.path.join(repo_dir, 'content',num,filename)):
+                        with open(os.path.join(repo_dir, 'content', num, filename)) as infile: 
+                            tags[filename] = defaultdict(int)
+                            for match in re.findall(r"</.*?>", infile.read()):
+                                tags[filename][match[2:-1]] += 1
+                print("deleting",zipfile)
+                delete_zip_file(zipfile)
+                print("deleting", os.path.join(repo_dir, 'content',num))
+                delete_unzipped_folder(os.path.join(repo_dir, 'content',num))
+                print("writing tags to", os.path.join(repo_dir, "tags", num+"_tags.json"))
+                with open(os.path.join(repo_dir, "tags", num+"_tags.json"), 'w') as outfile:
+                    json.dump(tags, outfile, indent = 1)
+            except KeyboardInterrupt: 
+                exit()
+            except:
+                errorzips.append(zipfile)
+
+    with open(os.path.join(repo_dir, "error_zips.txt"), 'w') as outfile: 
+        outfile.write('\n'.join(errorzips))
+
