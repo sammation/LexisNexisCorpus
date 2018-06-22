@@ -13,9 +13,9 @@ from shutil import copy2, rmtree
 from subprocess import call
 import zipfile as zf
 
-repo_dir = r"/home/smeshoyrer/LexisNexisCorpus"
+repo_dir = r"~/LexisNexisCorpus"
 content_fn = r"content-zip-titles-2018-04-25.csv" 
-zip_dir = r"/home/smeshoyrer/data/content-zip/content/"
+zip_dir = r"~/data/content-zip/content/"
 errorzips = []
 
 
