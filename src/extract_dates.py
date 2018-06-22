@@ -12,13 +12,14 @@ import json
 from shutil import copy2, rmtree
 from subprocess import call
 import zipfile as zf
+import xml.etree.ElementTree as ET
 
 repo_dir = os.path.expanduser(r"~/LexisNexisCorpus")
 content_fn = r"content-zip-titles-2018-04-25.csv" 
 zip_dir = os.path.expanduser(r"~/data/content-zip/content/")
 errorzips = []
 
-
+filedDate_re = r"<filedDate.*?</filedDate>"
 
 def get_all_state_zips(): 
     names = pd.read_csv(os.path.join(repo_dir, content_fn))
@@ -38,36 +39,43 @@ def unzip_file(zip_fn):
     zip_ref.extractall(repo_dir)
     zip_ref.close()
 
+def date_string_from_dict(date_dict):
+    return '-'.join((date_dict["year"],date_dict["month"],date_dict["day"]))
+
 if __name__ == "__main__":
     for zipfile in get_all_state_zips(): 
         if zipfile.endswith(".zip"):
             num = zipfile[:-4]
             try:
-                tags = dict() 
+                dates = dict() 
                 print("copying",zipfile)
                 copy_zip_file(zipfile)
                 print("unzipping",zipfile)
                 unzip_file(zipfile)
                 print("extracting tags")
+                print(os.listdir(os.path.join(repo_dir),'content',num))
                 for filename in os.listdir(os.path.join(repo_dir, 'content',num)):
+                    print(filename)
                     if os.path.isfile(os.path.join(repo_dir, 'content',num,filename)):
                         with open(os.path.join(repo_dir, 'content', num, filename)) as infile: 
-                            tags[filename] = defaultdict(int)
-                            for match in re.findall(r"</.*?>", infile.read()):
-                                tags[filename][match[2:-1]] += 1
-                print(tags)
+                            dates[filename] = defaultdict(list)
+                            for match in re.findall(filedDate_re, infile.read()):
+                                tree = ET.fromstring(match)
+                                print(tree.attrib)
+                                dates[filename].append(tree.attrib)
+                        print(filename,dates)
                 print("deleting",zipfile)
                 delete_zip_file(zipfile)
                 print("deleting", os.path.join(repo_dir, 'content',num))
                 delete_unzipped_folder(os.path.join(repo_dir, 'content',num))
                 print("writing tags to", os.path.join(repo_dir, "tags", num+"_tags.json"))
-                with open(os.path.join(repo_dir, "tags", num+"_tags.json"), 'w') as outfile:
-                    json.dump(tags, outfile, indent = 1)
+                with open(os.path.join(repo_dir, "dates", num+"_dates.json"), 'w') as outfile:
+                    json.dump(dates, outfile, indent = 1)
             except KeyboardInterrupt: 
                 exit()
             except:
                 errorzips.append(zipfile)
 
-    with open(os.path.join(repo_dir, "error_zips.txt"), 'w') as outfile: 
+    with open(os.path.join(repo_dir, "error_dates.txt"), 'w') as outfile: 
         outfile.write('\n'.join(errorzips))
 
