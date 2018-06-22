@@ -47,23 +47,21 @@ if __name__ == "__main__":
         if zipfile.endswith(".zip"):
             num = zipfile[:-4]
             try:
-                dates = dict() 
+                dates = defaultdict(list) 
                 print("copying",zipfile)
                 copy_zip_file(zipfile)
                 print("unzipping",zipfile)
                 unzip_file(zipfile)
-                print("extracting tags")
-                print(os.listdir(os.path.join(repo_dir),'content',num))
+                print("extracting dates")                
                 for filename in os.listdir(os.path.join(repo_dir, 'content',num)):
-                    print(filename)
+                    
                     if os.path.isfile(os.path.join(repo_dir, 'content',num,filename)):
                         with open(os.path.join(repo_dir, 'content', num, filename)) as infile: 
-                            dates[filename] = defaultdict(list)
                             for match in re.findall(filedDate_re, infile.read()):
                                 tree = ET.fromstring(match)
-                                print(tree.attrib)
-                                dates[filename].append(tree.attrib)
-                        print(filename,dates)
+                                
+                                dates[filename].append(date_string_from_dict(tree.attrib))
+                        
                 print("deleting",zipfile)
                 delete_zip_file(zipfile)
                 print("deleting", os.path.join(repo_dir, 'content',num))
