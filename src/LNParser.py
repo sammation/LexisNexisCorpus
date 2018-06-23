@@ -48,25 +48,31 @@ class LNParser(object):
         tag_re = "<{}.*?</{}>"
         tag = defaultdict(lambda: defaultdict(list))
         content_dir = os.path.join(self.repo_dir, 'content')
+        errors = []  
         for zipfn in zip_files:
-            LNParser.copy_and_unzip(zipfn)
+            try:
+                LNParser.copy_and_unzip(zipfn)
+                
+                num = zipfn[:-4]
+                unzipped_content_dir = os.path.join(content_dir, num)
+                all_fns = os.listdir(unzipped_content_dir)
+                num_all_fns = len(all_fns)
+                for fn in all_fns:
+                    fn_fullPath = os.path.join(unzipped_content_dir, fn)
+                    if os.path.isfile(fn_fullPath): 
+                        with open(fn_fullPath) as in_fp: 
+                            # TODO: avoid full file read()
+                            for match in re.findall(tag_re, infile.read())
+                                tag[zipfn][fn].append(str(match))
+            except Exception as e:
+                errors.append((zipfn, e.message))
             
-            num = zipfn[:-4]
-            unzipped_content_dir = os.path.join(content_dir, num)
-            all_fns = os.listdir(unzipped_content_dir)
-            num_all_fns = len(all_fns)
-            for fn in all_fns:
-                fn_fullPath = os.path.join(unzipped_content_dir, fn)
-                if os.path.isfile(fn_fullPath): 
-                    with open(fn_fullPath) as in_fp: 
-                        # TODO: avoid full file read()
-                        for match in re.findall(tag_re, infile.read())
-                            tag[zipfn][fn].append(str(match))
-            
-            LNParser.delete_zip(zipfn)
+            delete_zip(zipfn)
 
         if save: 
             json.dumps(tag, os.path.join(self.repo_dir,'tags',f"{tagName}.json"))
-        return tag
+            json.dumps(errors, os.path.join(self.repo_dir,'errors.json'))
+
+        return tag, errors
 
 
