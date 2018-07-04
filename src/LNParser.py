@@ -16,7 +16,7 @@ from extract_all_tags import *
 repo_dir = os.path.expanduser(r"~/LexisNexisCorpus")
 zip_dir = os.path.expanduser(r"~/data/content-zip/content")
 states_summ_fn = "states_counts.csv" 
-
+'''
 class LNParser(object):
     
     def __init__(self, zip_dir, zip_files, repo_dir):
@@ -74,5 +74,5 @@ class LNParser(object):
             json.dumps(errors, os.path.join(self.repo_dir,'errors.json'))
 
         return tag, errors
-
+'''
 
