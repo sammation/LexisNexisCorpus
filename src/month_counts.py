@@ -24,7 +24,7 @@ if __name__ == "__main__":
 			errors.append(fn)
 		
 	with open(os.path.join(repo_dir,"all_year_counts.json"),'w') as outfile: 
-		json.dump(all_year_counts, outfile)
+		json.dump(all_year_counts, outfile, indent=1)
 
 	if errors: 
 		with open(os.path.join(repo_dir,"all_year_counts.errors"), 'w') as outfile: 
