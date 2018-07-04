@@ -18,7 +18,7 @@ if __name__ == "__main__":
 				date_map = json.loads(json_fp.read())
 			years = [int(date[:4]) for fn, dates in date_map.items() for date in dates]
 			year_counts = Counter(years) 
-			zp[zip_num] = {"title" : title, "year_counts" : year_counts}
+			zp = {"zip_num": zip_num, "title" : title, "year_counts" : year_counts}
 			all_year_counts.append(zp)
 		except: 
 			errors.append(fn)
