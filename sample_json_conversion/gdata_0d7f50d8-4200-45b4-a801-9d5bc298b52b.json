@@ -1,0 +1,636 @@
+{
+ "courtCaseDoc": {
+  "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "http://www.lexisnexis.com/xmlschemas/content/public/courtcasedoc/1/",
+  "schemaVersion": 1.0,
+  "courtCaseDocHead": {
+   "caseInfo": {
+    "caseName": {
+     "fullCaseName": {
+      "$t": "IN RE: TOWNSEND FARMS ORGANIC ANTI-OXIDANT BLEND PRODUCTS LIABILITY LITIGATION"
+     },
+     "shortCaseName": {
+      "party1": " Townsend Farms Organic Anti-Oxidant Blend Prods. Liab. Litig.",
+      "$t": "In re Townsend Farms Organic Anti-Oxidant Blend Prods. Liab. Litig."
+     }
+    },
+    "docketNumber": {
+     "$t": "MDL No. 2537"
+    },
+    "courtInfo": {
+     "courtName": {
+      "$t": "Judicial Panel On Multidistrict Litigation"
+     },
+     "jurisdiction": {
+      "jurisSystem": {
+       "normalizedLongName": "United States",
+       "normalizedShortName": "US"
+      }
+     }
+    },
+    "citations": {
+     "citeForThisResource": {
+      "citeDefinition": "#4108#2#2014#075970#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "$t": "2014 U.S. Dist. LEXIS 75970"
+     }
+    },
+    "decisionDates": {
+     "filedDate": {
+      "day": 4,
+      "month": 6,
+      "year": 2014,
+      "dateText": {
+       "$t": "June 4, 2014"
+      }
+     }
+    }
+   },
+   "statusNotice": {
+    "publicationStatus": {
+     "status": "full"
+    }
+   }
+  },
+  "courtCaseDocBody": {
+   "panel": {
+    "page": {
+     "number": 1,
+     "pageScheme": "2014 U.S. Dist. LEXIS 75970"
+    },
+    "judges": {
+     "judge": [
+      {
+       "person": {
+        "nameText": {
+         "$t": "John G. Heyburn II"
+        }
+       }
+      },
+      {
+       "person": {
+        "nameText": {
+         "$t": "Marjorie O. Rendell"
+        }
+       }
+      },
+      {
+       "person": {
+        "nameText": {
+         "$t": "Lewis A. Kaplan"
+        }
+       }
+      },
+      {
+       "person": {
+        "nameText": {
+         "$t": "Ellen Segal Huvelle"
+        }
+       }
+      },
+      {
+       "person": {
+        "nameText": {
+         "$t": "Charles R. Breyer"
+        }
+       }
+      },
+      {
+       "person": {
+        "nameText": {
+         "$t": "Sarah S. Vance"
+        }
+       }
+      },
+      {
+       "person": {
+        "nameText": {
+         "$t": "R. David Proctor"
+        }
+       }
+      }
+     ]
+    }
+   },
+   "caseOpinions": {
+    "opinion": {
+     "opinionType": "majority",
+     "caseOpinionBy": {
+      "judge": {
+       "person": {
+        "nameText": {
+         "$t": "John G. Heyburn II"
+        }
+       }
+      }
+     },
+     "bodyText": {
+      "h": {
+       "emphasis": {
+        "typeStyle": "bf",
+        "$t": "ORDER DENYING TRANSFER"
+       }
+      },
+      "p": [
+       {
+        "anchor": {
+         "id": "para_1"
+        },
+        "emphasis": {
+         "typeStyle": "bf",
+         "$t": "Before the Panel"
+        },
+        "citation": {
+         "type": "statute",
+         "id": "I5CCJRJB2HM6M20010000400",
+         "normalizedCite": "28 U.S.C. 1407",
+         "content": {
+          "span": {
+           "normalizedCite": "28 U.S.C. 1407",
+           "$t": "28 U.S.C. \u00a7 1407",
+           "locator": {
+            "locatorKey": {
+             "keyName": {
+              "name": "citeReference"
+             },
+             "keyValue": {
+              "value": "#1828#123#000028#       1407#"
+             }
+            }
+           }
+          }
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_2"
+        },
+        "page": {
+         "number": 2,
+         "pageScheme": "2014 U.S. Dist. LEXIS 75970"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_3"
+        },
+        "page": {
+         "number": 3,
+         "pageScheme": "2014 U.S. Dist. LEXIS 75970"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_4"
+        },
+        "citation": [
+         {
+          "type": "statute",
+          "id": "I5CCJRJB2HM6M20020000400",
+          "normalizedCite": "28 U.S.C. 1407",
+          "content": {
+           "span": {
+            "normalizedCite": "28 U.S.C. 1407",
+            "$t": "Section 1407",
+            "locator": {
+             "locatorKey": {
+              "keyName": {
+               "name": "citeReference"
+              },
+              "keyValue": {
+               "value": "#1828#123#000028#       1407#"
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "type": "case",
+          "id": "I5CCJRJB2HM6M20040000400",
+          "content": {
+           "emphasis": {
+            "typeStyle": "it",
+            "$t": "In re: Fresh Dairy Prods. Antitrust Litig"
+           },
+           "span": [
+            {
+             "normalizedCite": "856 F. Supp. 2d 1344",
+             "$t": "856 F. Supp. 2d 1344",
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#20556#3#000856#001344#"
+               }
+              }
+             }
+            },
+            {
+             "normalizedCite": "856 F. Supp. 2d 1344",
+             "$t": 1345,
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#20556#3#000856#001344#"
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "type": "case",
+          "id": "I5CCJRJB2HM6M20080000400",
+          "content": {
+           "emphasis": {
+            "typeStyle": "it",
+            "$t": "In re: Trans Union LLC Fair Credit Reporting Act (FCRA) Litig"
+           },
+           "span": [
+            {
+             "normalizedCite": "923 F. Supp. 2d 1374",
+             "$t": "923 F. Supp. 2d 1374",
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#20556#3#000923#001374#"
+               }
+              }
+             }
+            },
+            {
+             "normalizedCite": "923 F. Supp. 2d 1374",
+             "$t": 1375,
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#20556#3#000923#001374#"
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "type": "case",
+          "id": "I5CCJRJB2HM6M200D0000400",
+          "content": {
+           "emphasis": {
+            "typeStyle": "it",
+            "$t": "In re: Yellow Brass Plumbing Component Prods. Liability Litig"
+           },
+           "span": [
+            {
+             "normalizedCite": "844 F. Supp. 2d 1377",
+             "$t": "844 F. Supp. 2d 1377",
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#20556#3#000844#001377#"
+               }
+              }
+             }
+            },
+            {
+             "normalizedCite": "844 F. Supp. 2d 1377",
+             "$t": 1378,
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#20556#3#000844#001377#"
+               }
+              }
+             }
+            }
+           ]
+          }
+         }
+        ],
+        "emphasis": [
+         {
+          "typeStyle": "it",
+          "$t": "See, e.g.,"
+         },
+         {
+          "typeStyle": "it",
+          "$t": "See, e.g.,"
+         },
+         {
+          "typeStyle": "it",
+          "$t": "see also"
+         },
+         {
+          "typeStyle": "smcaps",
+          "$t": "Manual for Complex Litigation, Fourth"
+         }
+        ],
+        "page": {
+         "number": 4,
+         "pageScheme": "2014 U.S. Dist. LEXIS 75970"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_5"
+        },
+        "citation": {
+         "type": "statute",
+         "id": "I5CCJRJB2HM6M200J0000400",
+         "normalizedCite": "28 U.S.C. 1407",
+         "content": {
+          "span": {
+           "normalizedCite": "28 U.S.C. 1407",
+           "$t": "28 U.S.C. \u00a7 1407",
+           "locator": {
+            "locatorKey": {
+             "keyName": {
+              "name": "citeReference"
+             },
+             "keyValue": {
+              "value": "#1828#123#000028#       1407#"
+             }
+            }
+           }
+          }
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_6"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_7"
+        },
+        "judge": {
+         "person": {
+          "nameText": {
+           "$t": "John G. Heyburn"
+          }
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_8"
+        },
+        "judge": {
+         "person": {
+          "nameText": {
+           "$t": "John G. Heyburn II"
+          }
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_9"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_10"
+        },
+        "judge": {
+         "person": {
+          "nameText": {
+           "$t": "Marjorie O. Rendell"
+          }
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_11"
+        },
+        "judge": {
+         "person": {
+          "nameText": {
+           "$t": "Lewis A. Kaplan"
+          }
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_12"
+        },
+        "judge": {
+         "person": {
+          "nameText": {
+           "$t": "Ellen Segal Huvelle"
+          }
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_13"
+        },
+        "judge": {
+         "person": {
+          "nameText": {
+           "$t": "Charles R. Breyer"
+          }
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_14"
+        },
+        "judge": {
+         "person": {
+          "nameText": {
+           "$t": "Sarah S. Vance"
+          }
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_15"
+        },
+        "judge": {
+         "person": {
+          "nameText": {
+           "$t": "R. David Proctor"
+          }
+         }
+        }
+       }
+      ],
+      "attachments": {
+       "appendix": {
+        "bodyText": {
+         "h": [
+          {
+           "emphasis": {
+            "typeStyle": "bf",
+            "$t": "SCHEDULE A"
+           }
+          },
+          {
+           "emphasis": {
+            "typeStyle": "un",
+            "$t": "District of Arizona"
+           }
+          },
+          {
+           "emphasis": {
+            "typeStyle": "un",
+            "$t": "Central District of California"
+           }
+          },
+          {
+           "emphasis": {
+            "typeStyle": "un",
+            "$t": "District of Colorado"
+           }
+          },
+          {
+           "emphasis": {
+            "typeStyle": "un",
+            "$t": "District of Hawaii"
+           }
+          },
+          {
+           "emphasis": {
+            "typeStyle": "un",
+            "$t": "District of Idaho"
+           }
+          },
+          {
+           "emphasis": {
+            "typeStyle": "un",
+            "$t": "District of Nevada"
+           }
+          },
+          {
+           "emphasis": {
+            "typeStyle": "un",
+            "$t": "District of New Mexico"
+           }
+          },
+          {
+           "emphasis": {
+            "typeStyle": "un",
+            "$t": "District of Oregon"
+           }
+          },
+          {
+           "emphasis": {
+            "typeStyle": "un",
+            "$t": "Western District of Washington"
+           }
+          }
+         ],
+         "p": [
+          {
+           "anchor": {
+            "id": "para_16"
+           }
+          },
+          {
+           "anchor": {
+            "id": "para_17"
+           }
+          },
+          {
+           "anchor": {
+            "id": "para_18"
+           }
+          },
+          {
+           "anchor": {
+            "id": "para_19"
+           }
+          },
+          {
+           "anchor": {
+            "id": "para_20"
+           }
+          },
+          {
+           "anchor": {
+            "id": "para_21"
+           }
+          },
+          {
+           "anchor": {
+            "id": "para_22"
+           },
+           "page": {
+            "number": 5,
+            "pageScheme": "2014 U.S. Dist. LEXIS 75970"
+           }
+          },
+          {
+           "anchor": {
+            "id": "para_23"
+           }
+          },
+          {
+           "anchor": {
+            "id": "para_24"
+           }
+          }
+         ]
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "metadata": {
+   "{http://purl.org/dc/elements/1.1/}metadata": {
+    "{http://purl.org/dc/elements/1.1/}creator": {
+     "$t": "Judicial Panel On Multidistrict Litigation"
+    },
+    "{http://purl.org/dc/elements/1.1/}publisher": {
+     "$t": "LexisNexis"
+    },
+    "{http://purl.org/dc/elements/1.1/}identifier": {
+     "identifierScheme": "PGUID",
+     "$t": "urn:contentItem:5CC2-D931-F04T-8000-00000-00"
+    },
+    "{http://purl.org/dc/elements/1.1/}source": {
+     "sourceScheme": "productContentSetIdentifier",
+     "$t": 104440
+    },
+    "{http://purl.org/dc/elements/1.1/}date": {
+     "dateType": "last-updated",
+     "$t": "2014-06-14"
+    }
+   },
+   "pagination": {
+    "paginationScheme": {
+     "pageScheme": "2014 U.S. Dist. LEXIS 75970"
+    }
+   }
+  }
+ }
+}
