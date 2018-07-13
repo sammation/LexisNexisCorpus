@@ -12,10 +12,39 @@ import json
 from subprocess import call
 import zipfile as zf
 from extract_all_tags import * 
+import pymongo
+from xmljson import Yahoo as xmlConverter
+from pathlib import Path
+from xml.etree import ElementTree
 
 repo_dir = os.path.expanduser(r"~/LexisNexisCorpus")
 zip_dir = os.path.expanduser(r"~/data/content-zip/content")
 states_summ_fn = "states_counts.csv" 
+
+courtCaseRE = r"<courtCaseDoc.*?/courtCaseDoc>"
+
+def parseDir(pathToSourceDir):
+	sourceDir = Path(pathToSourceDir)
+	files = [f for f in sourceDir.iterdir() if f.is_file()] 
+	parsedCases = [] 
+	for f in files: 
+		parsedCases += parseFile(f)
+	return parsedCases
+
+def parseFile(pathFile):
+	parsedCases = [] 
+	with pathFile.open() as infile: 
+		for m in re.finditer(courtCaseRE, infile.read()): 
+			caseXml = ElementTree.fromstring(m)
+			caseJson = json.dumps(xmlConverter.data(caseXml))
+			parsedCases.append(caseJson)
+	return parsedCases
+
+def uploadDir(pathToSourceDir): 
+	for caseJson in parseDir(pathToSourceDir): 
+		pass
+
+
 '''
 class LNParser(object):
     
