@@ -6,16 +6,17 @@
 
 import os 
 import pandas as pd
-from collections import defaultdict, Counter
+from collections import defaultdict, Counter, OrderedDict
 import re
 import json
 from subprocess import call
 import zipfile as zf
 from extract_all_tags import * 
 import pymongo
-from xmljson import Yahoo as xmlConverter
+from xmljson import Yahoo 
 from pathlib import Path
 from xml.etree import ElementTree
+from math import floor
 
 repo_dir = os.path.expanduser(r"~/LexisNexisCorpus")
 zip_dir = os.path.expanduser(r"~/data/content-zip/content")
@@ -23,26 +24,58 @@ states_summ_fn = "states_counts.csv"
 
 courtCaseRE = r"<courtCaseDoc.*?/courtCaseDoc>"
 
-def parseDir(pathToSourceDir):
+xmlConverter = Yahoo()
+progress = [i/10 for i in range(11)]
+errors = []
+
+def parseDir(mongoCollection, pathToSourceDir):
 	sourceDir = Path(pathToSourceDir)
 	files = [f for f in sourceDir.iterdir() if f.is_file()] 
-	parsedCases = [] 
-	for f in files: 
-		parsedCases += parseFile(f)
-	return parsedCases
+	currProgress = set([floor(i * len(files)) for i in progress])
+	for i, f in enumerate(files): 
+		for parsedCase in parseFile(f):
+			mongoCollection.insert_one(parsedCase)
+		if i in currProgress: 
+			print("{0}/{1} files done in {2}".format(i, len(files), pathToSourceDir))
 
 def parseFile(pathFile):
 	parsedCases = [] 
 	with pathFile.open() as infile: 
-		for m in re.finditer(courtCaseRE, infile.read()): 
-			caseXml = ElementTree.fromstring(m)
-			caseJson = json.dumps(xmlConverter.data(caseXml))
-			parsedCases.append(caseJson)
+		for m in re.findall(courtCaseRE, infile.read()): 
+			try: 
+				caseXml = ElementTree.fromstring(m)  
+				caseDict = xmlConverter.data(caseXml)
+				caseDict = json.loads(json.dumps(caseDict).replace('.','_'))
+				parsedCases.append(caseDict)
+			except Exception as e: 
+				print("Error occurred on {0} - {1}".format(pathFile.resolve(), e.message))
+				errors.append((pathFile.resolve(), e.message))
 	return parsedCases
+	
 
-def uploadDir(pathToSourceDir): 
-	for caseJson in parseDir(pathToSourceDir): 
-		pass
+def uploadDir(mongoCollection, pathToSourceDir): 
+	parseDir(mongoCollection, pathToSourceDir)	
+
+if __name__ == "__main__": 
+	zipfiles = [z for z in get_all_state_zips() if z.endswith(".zip")]
+	
+	client = pymongo.MongoClient()
+	db = client.LexisNexis
+	mongoCollection = db["cases"]
+	for zf in zipfiles[:len(zipfiles)//10]:
+		print("Copying", zf)
+		copy_zip_file(zf)
+		print("Unzipping", zf)
+		unzip_file(zf)
+		num = zf[:-4] 
+		print("Parsing cases")
+		uploadDir(mongoCollection, os.path.join(repo_dir, 'content', num))
+		print("Deleting", zf)
+		delete_zip_file(zf)
+		print("Deleting zip dir")
+		delete_unzipped_folder(os.path.join(repo_dir,'content',num))
+	with open("errors.json",'w') as outfile: 
+		json.dump(outfile, errors)
 
 
 '''
