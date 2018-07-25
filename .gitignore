@@ -107,3 +107,4 @@ venv.bak/
 *.zip
 tags/
 dates/
+content/
