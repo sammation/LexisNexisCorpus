@@ -1,0 +1,2471 @@
+{
+ "courtCaseDoc": {
+  "attributes": {
+   "schemaVersion": "1.0",
+   "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "http://www.lexisnexis.com/xmlschemas/content/public/courtcasedoc/1/"
+  },
+  "children": [
+   {
+    "courtCaseDocHead": {
+     "attributes": {},
+     "children": [
+      {
+       "caseInfo": {
+        "attributes": {},
+        "children": [
+         {
+          "caseName": {
+           "attributes": {},
+           "children": [
+            {
+             "fullCaseName": "IN RE: ETHICON PHYSIOMESH FLEXIBLE COMPOSITE HERNIA MESH PRODUCTS LIABILITY LITIGATION"
+            },
+            {
+             "shortCaseName": {
+              "attributes": {
+               "party1": "Ethicon Physiomesh Flexible Composite Hernia Mesh Prods. Liab. Litig."
+              },
+              "children": [
+               "In re Ethicon Physiomesh Flexible Composite Hernia Mesh Prods. Liab. Litig."
+              ]
+             }
+            }
+           ]
+          }
+         },
+         {
+          "docketNumber": "MDL No. 2782",
+          "courtInfo": {
+           "attributes": {},
+           "children": [
+            {
+             "courtName": "Judicial Panel on Multidistrict Litigation"
+            },
+            {
+             "jurisdiction": {
+              "attributes": {},
+              "children": [
+               {
+                "jurisSystem": {
+                 "attributes": {
+                  "normalizedLongName": "United States",
+                  "normalizedShortName": "US"
+                 }
+                }
+               }
+              ]
+             }
+            }
+           ]
+          },
+          "citations": {
+           "attributes": {},
+           "children": [
+            {
+             "citeForThisResource": {
+              "attributes": {
+               "citeDefinition": "#4108#2#2017#084431#",
+               "pageScheme": "U.S. Dist. LEXIS"
+              },
+              "children": [
+               "2017 U.S. Dist. LEXIS 84431"
+              ]
+             }
+            }
+           ]
+          },
+          "decisionDates": {
+           "attributes": {},
+           "children": [
+            {
+             "filedDate": {
+              "attributes": {
+               "day": "02",
+               "month": "06",
+               "year": "2017"
+              },
+              "children": [
+               {
+                "dateText": "June 2, 2017"
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      {
+       "caseHistory": {
+        "attributes": {},
+        "children": [
+         {
+          "priorHistory": {
+           "attributes": {},
+           "children": [
+            {
+             "appealHistory": {
+              "attributes": {},
+              "children": [
+               {
+                "historyCite": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "citation": {
+                    "attributes": {
+                     "guid": "urn:historyCitation:I5NPVVKN1T51770030000400",
+                     "id": "I5NPVVKN1T51770030000400",
+                     "type": "case"
+                    },
+                    "children": [
+                     {
+                      "content": {
+                       "attributes": {},
+                       "children": [
+                        "Huff v. Ethicon, Inc.,",
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "2016 U.S. Dist. LEXIS 47203"
+                          },
+                          "children": [
+                           "2016 U.S. Dist. LEXIS 47203",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#4108#2#2016#047203#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "historyCite": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "citation": {
+                    "attributes": {
+                     "guid": "urn:historyCitation:I5NPVVKN1XJH0W0030000400",
+                     "id": "I5NPVVKN1XJH0W0030000400",
+                     "type": "case"
+                    },
+                    "children": [
+                     {
+                      "content": {
+                       "attributes": {},
+                       "children": [
+                        "Graham v. Johnson & Johnson,",
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "2017 U.S. Dist. LEXIS 29056"
+                          },
+                          "children": [
+                           "2017 U.S. Dist. LEXIS 29056",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#4108#2#2017#029056#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       },
+       "summaries": {
+        "attributes": {}
+       }
+      }
+     ]
+    }
+   },
+   {
+    "courtCaseDocBody": {
+     "attributes": {},
+     "children": [
+      {
+       "representation": {
+        "attributes": {},
+        "children": [
+         {
+          "counsel": "For Bilyana Barakova, Valeri Barakova (1:17cv543), Plaintiffs: Aimee Hall Wagstaff, Andrus Wagstaff, P.C., Lakewood, CO."
+         },
+         {
+          "counsel": "For Johnson & Johnson, Ethicon, Inc. (1:17cv543), Defendants: Adam Patrick O'Brien, Mary Alice Wells, Wells Anderson & Race, LLC, Denver, CO; Fred E. Bourn, III, Butler Snow LLP-Ridgeland, Ridgeland, MS."
+         },
+         {
+          "counsel": "For Alison Keefer, Erik Keefer (1:17cv603), Plaintiffs: Christopher Bryan Fears, LEAD ATTORNEY, Fears Nachawati, PLLC, Dallas, TX; Aimee Hall Wagstaff, Andrus Wagstaff, P.C., Lakewood, CO."
+         },
+         {
+          "counsel": "For Lillian Graham (3:17cv229), Plaintiff: Andrew Allen Norden, Joseph A. Osborne, LEAD ATTORNEYS, Osborne & Associates Law Firm P.A., Boca Raton, FL."
+         },
+         {
+          "counsel": "For Johnson & Johnson, Ethicon, Inc. (3:17cv229, 6:17cv503), Defendants: William E. Lawton, LEAD ATTORNEY, Dean, Ringers, Morgan & Lawton, PA, Orlando, FL."
+         },
+         {
+          "counsel": "For Joanne Quinn (6:16cv1663), Plaintiff: Anna Yarovich Lenchus, LEAD ATTORNEY, Florida Justice Law Group, Boca Raton, FL."
+         },
+         {
+          "counsel": "For Ethicon, Inc. , Johnson & Johnson (6:16cv1663, 8:16cv3502, 8:17cv113), Defendants: Richard McLure Dye, LEAD ATTORNEY, PRO HAC VICE, Butler Snow, LLP, Ridgeland, MS; William E. Lawton, LEAD ATTORNEY, Dean, Ringers, Morgan & Lawton, PA, Orlando, FL."
+         },
+         {
+          "counsel": "For Edith J. Carr, David Middleton Carr (6:17cv393), Plaintiffs: Daniel James Thornburgh, Douglass A. Kreis, Nathan Charles Bess, LEAD ATTORNEYS, Aylstock, Witkin, Kreis & Overholtz, PLLC, Pensacola, FL."
+         },
+         {
+          "counsel": "For Patricia Miller (6:17cv503), Plaintiff: James Beckett Thompson, Jr, LEAD ATTORNEY, Thompson, Goodis, Thompson, Groseclose & Richardson, PA, St Petersburg, FL; Jeffrey Marc Goodis, LEAD ATTORNEY, Goodis, Thompson & Miller, PA, St Petersburg, FL."
+         },
+         {
+          "counsel": "For Sarah Ann Gilman (8:16cv3502), Plaintiff: Daniel James Thornburgh, Douglass A. Kreis, Nathan Charles Bess, LEAD ATTORNEYS, Aylstock, Witkin, Kreis & Overholtz, PLLC, Pensacola, FL."
+         },
+         {
+          "counsel": "For David A. Sunter (8:17cv113), Plaintiff: Daniel James Thornburgh, Douglass A. Kreis, Nathan Charles Bess, LEAD ATTORNEYS, Aylstock, Witkin, Kreis & Overholtz, PLLC, Pensacola, FL."
+         },
+         {
+          "counsel": "For Connie Franklin, Marvin Franklin (4:17cv31), Plaintiffs: Andrew Judson Hill, III, Josh B. Wages, James B. Matthews, III, Patrick Hammond Garrard, LEAD ATTORNEYS, HENRY G GARRARD, III, BLASINGAME, BURCH GARRARD & ASHLEY PC, Athens, GA."
+         },
+         {
+          "counsel": "For Johnson & Johnson, Ethicon Inc (4:17cv31), Defendants: Nancy Karen Deming, LEAD ATTORNEY, Atlanta, GA; RICHARD MCLURE DYE, LEAD ATTORNEY, Ridgeland, MS; DAVID F. NORDEN, Troutman Sanders, LLP, Atlanta, GA."
+         },
+         {
+          "counsel": "For Henry Lee Brown (4:17cv36), Plaintiff: Andrew Judson Hill, III, Henry G. Garrard, III, James B. Matthews, III, Josh B. Wages, Patrick Hammond Garrard,  LEAD ATTORNEYS, Blasingame, Burch, Garrard & Ashley, P.C., Athens, GA."
+         },
+         {
+          "counsel": "For Johnson & Johnson, Ethicon, Inc. (4:17cv36, 4:17cv40), Defendants: Nancy Karen Deming, LEAD ATTORNEY, David F. Norden, Troutman Sanders,Atlanta, GA."
+         },
+         {
+          "counsel": "For Jeffrey Leyton Winfrey (4:17cv40), Plaintiff: Andrew Judson Hill, III, Henry G. Garrard , III, James B. Matthews, III, Josh B. Wages, Patrick Hammond Garrard, LEAD ATTORNEYS, Blasingame, Burch, Garrard & Ashley, P.C., Athens, GA."
+         },
+         {
+          "counsel": "For Matthew Huff (3:16cv368), Plaintiff: Blake Charles Erskine, Erskine & McMahon, LLP, Longview, TX; Danny M. Stroup, Dan Stroup, PC, Longview, TX; William A. Alexander, Matthew H. Caraway, Sam C. Mitchell and Associates, West Frankfort, IL."
+         },
+         {
+          "counsel": "For Ethicon, Inc. (3:16cv368), Defendant: Bettina J. Strauss, Dan H. Ball, Bryan Cave LLP, St. Louis, MO; Fred E. Bourn, III, Butler, Snow et al, Ridgeland, MS."
+         },
+         {
+          "counsel": "For Doreen Worrell (3:17cv172), Plaintiff: Andrew J. Cross, Sarah Shoemake Doles, Carey, Danis and Lowe, St. Louis, MO."
+         },
+         {
+          "counsel": "For Ethicon, Inc., Johnson & Johnson (3:17cv172), Defendants: Dan H. Ball, LEAD ATTORNEY, Bettina J. Strauss, Bryan Cave LLP, St. Louis, MO."
+         },
+         {
+          "counsel": "For Robert B. Carrillo (7:17cv37), Plaintiff: Gary Steve Logsdon, LEAD ATTORNEY, Gary S. Logsdon & Associates, PCC, Brownsville, KY."
+         },
+         {
+          "counsel": "For Johnson & Johnson, Ethicon, Inc. (7:17cv37), Defendants: Fred E. Bourn, III, LEAD ATTORNEY, PRO HAC VICE, Butler Snow LLP, Ridgeland, MS; Susan J. Pope, LEAD ATTORNEY, Frost Brown Todd LLC, Lexington, KY."
+         },
+         {
+          "counsel": "For David Watring (1:16cv12278), Plaintiff: Robert T. Naumes, Jr., LEAD ATTORNEY, The Law Office of Jeffrey S. Glassman, Boston, MA."
+         },
+         {
+          "counsel": "For Ethicon, Inc. (1:16cv12278), Defendant: Fred E. Bourn, III, LEAD ATTORNEY, PRO HAC VICE, Butler Snow LLP, Ridgeland, MS; James M. Campbell, Peter John Veysey, Jr., Campbell, Campbell, Edwards & Conroy, PC, Boston, MA."
+         },
+         {
+          "counsel": "For David Ramey (3:17cv1455), Plaintiff: DAVID B. KRANGLE, LEAD ATTORNEY, Alonso Krangle LLP, Melville, NY."
+         },
+         {
+          "counsel": "For Gabrielle Cox (4:16cv729), Plaintiff: Paul Telhiard Boudreaux, LEAD ATTORNEY, Richardson Richardson Boudreaux, Tulsa, OK."
+         },
+         {
+          "counsel": "For Ethicon, Inc. (4:16cv729), Defendant: Amy Sherry-Fischer, Larry D. Ottaway, LEAD ATTORNEYS, Foliart Huff Ottaway & Bottom, Oklahoma City, OK; Fred E (Trey) Bourn, III, LEAD ATTORNEY, Butler Snow O'Mara Stevens & Cannada PLLC (MS), Ridgeland, MS."
+         },
+         {
+          "counsel": "For Eddie Shelton, Nancy Shelton (2:17cv614), Plaintiffs: Fred Thompson, III, LEAD ATTORNEY, Motley Rice, Mt Pleasant, SC."
+         },
+         {
+          "counsel": "For Johnson & Johnson, Ethicon Inc (2:17cv614), Defendants: Amanda S. Kitts, David Eidson Dukes, LEAD ATTORNEYS, Nelson Mullins Riley and Scarborough, Columbia, SC."
+         }
+        ]
+       }
+      },
+      {
+       "panel": {
+        "attributes": {},
+        "children": [
+         {
+          "judges": {
+           "attributes": {},
+           "children": [
+            {
+             "page": {
+              "attributes": {
+               "number": "1",
+               "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+              }
+             }
+            },
+            {
+             "judge": {
+              "attributes": {},
+              "children": [
+               {
+                "person": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "nameText": "Sarah S. Vance"
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            },
+            {
+             "judge": {
+              "attributes": {},
+              "children": [
+               {
+                "person": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "nameText": "Marjorie O. Rendell"
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            },
+            {
+             "judge": {
+              "attributes": {},
+              "children": [
+               {
+                "person": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "nameText": "R. David Proctor"
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            },
+            {
+             "judge": {
+              "attributes": {},
+              "children": [
+               {
+                "person": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "nameText": "Ellen Segal Huvelle"
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            },
+            {
+             "judge": {
+              "attributes": {},
+              "children": [
+               {
+                "person": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "nameText": "Catherine D. Perry"
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       },
+       "caseOpinions": {
+        "attributes": {},
+        "children": [
+         {
+          "opinion": {
+           "attributes": {
+            "opinionType": "majority"
+           },
+           "children": [
+            {
+             "caseOpinionBy": {
+              "attributes": {},
+              "children": [
+               {
+                "judge": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "person": {
+                    "attributes": {},
+                    "children": [
+                     {
+                      "nameText": "Sarah S. Vance"
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            },
+            {
+             "bodyText": {
+              "attributes": {},
+              "children": [
+               {
+                "h": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "bf"
+                    },
+                    "children": [
+                     "TRANSFER ORDER"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_1"
+                    }
+                   }
+                  },
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "bf"
+                    },
+                    "children": [
+                     "Before the Panel:"
+                    ]
+                   }
+                  },
+                  {
+                   "footnote": {
+                    "attributes": {},
+                    "children": [
+                     {
+                      "anchor": {
+                       "attributes": {
+                        "id": "fn_fnote1"
+                       }
+                      }
+                     },
+                     {
+                      "label": "*",
+                      "bodyText": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "p": {
+                          "attributes": {},
+                          "children": [
+                           {
+                            "anchor": {
+                             "attributes": {
+                              "id": "fnpara_1"
+                             }
+                            }
+                           },
+                           {
+                            "judge": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "person": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "nameText": "Charles R. Breyer"
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           },
+                           {
+                            "judge": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "person": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "nameText": "Lewis A. Kaplan"
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   },
+                   "citation": {
+                    "attributes": {
+                     "guid": "urn:citation:I5NPF7MM2HM5RR0010000400",
+                     "id": "I5NPF7MM2HM5RR0010000400",
+                     "normalizedCite": "28 U.S.C. 1407",
+                     "type": "statute"
+                    },
+                    "children": [
+                     {
+                      "content": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "28 U.S.C. 1407"
+                          },
+                          "children": [
+                           "28 U.S.C. \u00a7 1407",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#1828#123#000028#       1407#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  },
+                  {
+                   "footnote": {
+                    "attributes": {},
+                    "children": [
+                     {
+                      "anchor": {
+                       "attributes": {
+                        "id": "fn_fnote2"
+                       }
+                      }
+                     },
+                     {
+                      "label": "1",
+                      "bodyText": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "p": {
+                          "attributes": {},
+                          "children": [
+                           {
+                            "anchor": {
+                             "attributes": {
+                              "id": "fnpara_2"
+                             }
+                            }
+                           },
+                           {
+                            "emphasis": {
+                             "attributes": {
+                              "typeStyle": "it"
+                             },
+                             "children": [
+                              "See"
+                             ]
+                            }
+                           },
+                           {
+                            "citation": {
+                             "attributes": {
+                              "guid": "urn:citation:I5NPF7MM2HM5RR0020000400",
+                              "id": "I5NPF7MM2HM5RR0020000400",
+                              "normalizedCite": "FED. JUD. PANEL MULTI-DIST. LITIG. 1.1",
+                              "type": "courtRule"
+                             },
+                             "children": [
+                              {
+                               "content": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "span": {
+                                   "attributes": {
+                                    "normalizedCite": "Fed. Jud. Panel Multi-Dist. Litig. 1.1 (h)"
+                                   },
+                                   "children": [
+                                    "Panel Rules 1.1(h)",
+                                    {
+                                     "locator": {
+                                      "attributes": {},
+                                      "children": [
+                                       {
+                                        "locatorKey": {
+                                         "attributes": {},
+                                         "children": [
+                                          {
+                                           "keyName": {
+                                            "attributes": {
+                                             "name": "citeReference"
+                                            }
+                                           }
+                                          },
+                                          {
+                                           "keyValue": {
+                                            "attributes": {
+                                             "value": "#23143#110#   1.1#"
+                                            }
+                                           }
+                                          }
+                                         ]
+                                        }
+                                       }
+                                      ]
+                                     }
+                                    }
+                                   ]
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           },
+                           {
+                            "citation": {
+                             "attributes": {
+                              "guid": "urn:citation:I5NPF7MM2HM5RR0030000400",
+                              "id": "I5NPF7MM2HM5RR0030000400",
+                              "normalizedCite": "FED. JUD. PANEL MULTI-DIST. LITIG. 7.1",
+                              "type": "courtRule"
+                             },
+                             "children": [
+                              {
+                               "content": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "span": {
+                                   "attributes": {
+                                    "normalizedCite": "Fed. Jud. Panel Multi-Dist. Litig. 7.1"
+                                   },
+                                   "children": [
+                                    "7.1",
+                                    {
+                                     "locator": {
+                                      "attributes": {},
+                                      "children": [
+                                       {
+                                        "locatorKey": {
+                                         "attributes": {},
+                                         "children": [
+                                          {
+                                           "keyName": {
+                                            "attributes": {
+                                             "name": "citeReference"
+                                            }
+                                           }
+                                          },
+                                          {
+                                           "keyValue": {
+                                            "attributes": {
+                                             "value": "#23143#110#   7.1#"
+                                            }
+                                           }
+                                          }
+                                         ]
+                                        }
+                                       }
+                                      ]
+                                     }
+                                    }
+                                   ]
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           },
+                           {
+                            "citation": {
+                             "attributes": {
+                              "guid": "urn:citation:I5NPF7MM2HM5RR0040000400",
+                              "id": "I5NPF7MM2HM5RR0040000400",
+                              "normalizedCite": "FED. JUD. PANEL MULTI-DIST. LITIG. 7.2",
+                              "type": "courtRule"
+                             },
+                             "children": [
+                              {
+                               "content": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "span": {
+                                   "attributes": {
+                                    "normalizedCite": "Fed. Jud. Panel Multi-Dist. Litig. 7.2"
+                                   },
+                                   "children": [
+                                    "7.2",
+                                    {
+                                     "locator": {
+                                      "attributes": {},
+                                      "children": [
+                                       {
+                                        "locatorKey": {
+                                         "attributes": {},
+                                         "children": [
+                                          {
+                                           "keyName": {
+                                            "attributes": {
+                                             "name": "citeReference"
+                                            }
+                                           }
+                                          },
+                                          {
+                                           "keyValue": {
+                                            "attributes": {
+                                             "value": "#23143#110#   7.2#"
+                                            }
+                                           }
+                                          }
+                                         ]
+                                        }
+                                       }
+                                      ]
+                                     }
+                                    }
+                                   ]
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   },
+                   "page": {
+                    "attributes": {
+                     "number": "2",
+                     "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_2"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_3"
+                    }
+                   }
+                  },
+                  {
+                   "page": {
+                    "attributes": {
+                     "number": "3",
+                     "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+                    }
+                   },
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "it"
+                    },
+                    "children": [
+                     "inter alia"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_4"
+                    }
+                   }
+                  },
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "it"
+                    },
+                    "children": [
+                     "See, e.g.,"
+                    ]
+                   }
+                  },
+                  {
+                   "citation": {
+                    "attributes": {
+                     "guid": "urn:citation:I5NPF7MM2HM5RR0060000400",
+                     "id": "I5NPF7MM2HM5RR0060000400",
+                     "type": "case"
+                    },
+                    "children": [
+                     {
+                      "content": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "emphasis": {
+                          "attributes": {
+                           "typeStyle": "it"
+                          },
+                          "children": [
+                           "In re: Cook Medical, Inc., IVC Filters Mktg., Sales Practices & Prods. Liab. Litig."
+                          ]
+                         }
+                        },
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "53 F. Supp. 3d 1379"
+                          },
+                          "children": [
+                           "53 F. Supp. 3d 1379",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#51717#3#000053#001379#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        },
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "53 F. Supp. 3d 1379"
+                          },
+                          "children": [
+                           "1381",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#51717#3#000053#001379#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  },
+                  {
+                   "citation": {
+                    "attributes": {
+                     "guid": "urn:citation:I5NPF7MM2HM5RR00B0000400",
+                     "id": "I5NPF7MM2HM5RR00B0000400",
+                     "type": "case"
+                    },
+                    "children": [
+                     {
+                      "content": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "53 F. Supp. 3d 1379"
+                          },
+                          "children": [
+                           {
+                            "emphasis": {
+                             "attributes": {
+                              "typeStyle": "it"
+                             },
+                             "children": [
+                              "Id."
+                             ]
+                            }
+                           },
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#51717#3#000053#001379#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  },
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "it"
+                    },
+                    "children": [
+                     "see also"
+                    ]
+                   }
+                  },
+                  {
+                   "citation": {
+                    "attributes": {
+                     "guid": "urn:citation:I5NPF7MM2HM5RR00D0000400",
+                     "id": "I5NPF7MM2HM5RR00D0000400",
+                     "type": "case"
+                    },
+                    "children": [
+                     {
+                      "content": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "emphasis": {
+                          "attributes": {
+                           "typeStyle": "it"
+                          },
+                          "children": [
+                           "In re: Wright Med. Tech., Inc., Conserve Hip Implant Prods. Liab. Litig."
+                          ]
+                         }
+                        },
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "844 F. Supp. 2d 1371"
+                          },
+                          "children": [
+                           "844 F. Supp. 2d 1371",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#20556#3#000844#001371#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        },
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "844 F. Supp. 2d 1371"
+                          },
+                          "children": [
+                           "1372",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#20556#3#000844#001371#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   },
+                   "page": {
+                    "attributes": {
+                     "number": "4",
+                     "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+                    }
+                   }
+                  },
+                  {
+                   "citation": {
+                    "attributes": {
+                     "guid": "urn:citation:I5NPF7MM2HM5RR00J0000400",
+                     "id": "I5NPF7MM2HM5RR00J0000400",
+                     "type": "case"
+                    },
+                    "children": [
+                     {
+                      "content": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "emphasis": {
+                          "attributes": {
+                           "typeStyle": "it"
+                          },
+                          "children": [
+                           "In re: Zimmer Durom Hip Cup Prods. Liab. Litig."
+                          ]
+                         }
+                        },
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "717 F. Supp. 2d 1376"
+                          },
+                          "children": [
+                           "717 F. Supp. 2d 1376",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#20556#3#000717#001376#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        },
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "717 F. Supp. 2d 1376"
+                          },
+                          "children": [
+                           "1378",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#20556#3#000717#001376#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_5"
+                    }
+                   }
+                  },
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "it"
+                    },
+                    "children": [
+                     "See"
+                    ]
+                   }
+                  },
+                  {
+                   "citation": {
+                    "attributes": {
+                     "guid": "urn:citation:I5NPF7MM2HM5RR00P0000400",
+                     "id": "I5NPF7MM2HM5RR00P0000400",
+                     "type": "case"
+                    },
+                    "children": [
+                     {
+                      "content": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "emphasis": {
+                          "attributes": {
+                           "typeStyle": "it"
+                          },
+                          "children": [
+                           "In re: Seroquel Prods. Liab. Litig."
+                          ]
+                         }
+                        },
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "447 F. Supp. 2d 1376"
+                          },
+                          "children": [
+                           "447 F. Supp. 2d 1376",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#20556#3#000447#001376#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        },
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "447 F. Supp. 2d 1376"
+                          },
+                          "children": [
+                           "1378",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#20556#3#000447#001376#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  },
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "it"
+                    },
+                    "children": [
+                     "see also"
+                    ]
+                   }
+                  },
+                  {
+                   "citation": {
+                    "attributes": {
+                     "guid": "urn:citation:I5NPF7MM2HM5RR00V0000400",
+                     "id": "I5NPF7MM2HM5RR00V0000400",
+                     "type": "case"
+                    },
+                    "children": [
+                     {
+                      "content": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "53 F. Supp. 3d 1379"
+                          },
+                          "children": [
+                           {
+                            "emphasis": {
+                             "attributes": {
+                              "typeStyle": "it"
+                             },
+                             "children": [
+                              "In re: Cook IVC Filters"
+                             ]
+                            }
+                           },
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#51717#3#000053#001379#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  },
+                  {
+                   "citation": {
+                    "attributes": {
+                     "guid": "urn:citation:I5NPF7MM2HM5RR00X0000400",
+                     "id": "I5NPF7MM2HM5RR00X0000400",
+                     "type": "case"
+                    },
+                    "children": [
+                     {
+                      "content": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "emphasis": {
+                          "attributes": {
+                           "typeStyle": "it"
+                          },
+                          "children": [
+                           "In re: Seroquel"
+                          ]
+                         }
+                        },
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "447 F. Supp. 2d 1376"
+                          },
+                          "children": [
+                           "447 F. Supp. 2d at 1378",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#20556#3#000447#001376#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_6"
+                    }
+                   }
+                  },
+                  {
+                   "citation": {
+                    "attributes": {
+                     "guid": "urn:citation:I5NPF7MM2HM5RR00Y0000400",
+                     "id": "I5NPF7MM2HM5RR00Y0000400",
+                     "normalizedCite": "28 U.S.C. 1407",
+                     "type": "statute"
+                    },
+                    "children": [
+                     {
+                      "content": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "span": {
+                          "attributes": {
+                           "normalizedCite": "28 U.S.C. 1407"
+                          },
+                          "children": [
+                           "Section 1407",
+                           {
+                            "locator": {
+                             "attributes": {},
+                             "children": [
+                              {
+                               "locatorKey": {
+                                "attributes": {},
+                                "children": [
+                                 {
+                                  "keyName": {
+                                   "attributes": {
+                                    "name": "citeReference"
+                                   }
+                                  }
+                                 },
+                                 {
+                                  "keyValue": {
+                                   "attributes": {
+                                    "value": "#1828#123#000028#       1407#"
+                                   }
+                                  }
+                                 }
+                                ]
+                               }
+                              }
+                             ]
+                            }
+                           }
+                          ]
+                         }
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_7"
+                    }
+                   }
+                  },
+                  {
+                   "page": {
+                    "attributes": {
+                     "number": "5",
+                     "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+                    }
+                   },
+                   "judge": {
+                    "attributes": {},
+                    "children": [
+                     {
+                      "person": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "nameText": "Richard W. Story"
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_8"
+                    }
+                   }
+                  },
+                  {
+                   "judge": {
+                    "attributes": {},
+                    "children": [
+                     {
+                      "person": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "nameText": "Richard W. Story"
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_9"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_10"
+                    }
+                   }
+                  },
+                  {
+                   "judge": {
+                    "attributes": {},
+                    "children": [
+                     {
+                      "person": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "nameText": "Sarah S. Vance"
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_11"
+                    }
+                   }
+                  },
+                  {
+                   "judge": {
+                    "attributes": {},
+                    "children": [
+                     {
+                      "person": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "nameText": "Sarah S. Vance"
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_12"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_13"
+                    }
+                   }
+                  },
+                  {
+                   "judge": {
+                    "attributes": {},
+                    "children": [
+                     {
+                      "person": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "nameText": "Marjorie O. Rendell"
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_14"
+                    }
+                   }
+                  },
+                  {
+                   "judge": {
+                    "attributes": {},
+                    "children": [
+                     {
+                      "person": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "nameText": "R. David Proctor"
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_15"
+                    }
+                   }
+                  },
+                  {
+                   "judge": {
+                    "attributes": {},
+                    "children": [
+                     {
+                      "person": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "nameText": "Ellen Segal Huvelle"
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_16"
+                    }
+                   }
+                  },
+                  {
+                   "judge": {
+                    "attributes": {},
+                    "children": [
+                     {
+                      "person": {
+                       "attributes": {},
+                       "children": [
+                        {
+                         "nameText": "Catherine D. Perry"
+                        }
+                       ]
+                      }
+                     }
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "h": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "bf"
+                    },
+                    "children": [
+                     "SCHEDULE A"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "h": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "un"
+                    },
+                    "children": [
+                     "District of Colorado"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_17"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "h": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "un"
+                    },
+                    "children": [
+                     "Middle District of Florida"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_18"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_19"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_20"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_21"
+                    }
+                   }
+                  },
+                  {
+                   "page": {
+                    "attributes": {
+                     "number": "6",
+                     "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_22"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_23"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "h": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "un"
+                    },
+                    "children": [
+                     "Middle District of Georgia"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_24"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "h": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "un"
+                    },
+                    "children": [
+                     "Northern District of Georgia"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_25"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_26"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "h": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "un"
+                    },
+                    "children": [
+                     "Southern District of Illinois"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_27"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_28"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "h": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "un"
+                    },
+                    "children": [
+                     "Eastern District of Kentucky"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_29"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "h": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "un"
+                    },
+                    "children": [
+                     "District of Massachusetts"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_30"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "h": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "un"
+                    },
+                    "children": [
+                     "District of New Jersey"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_31"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "h": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "un"
+                    },
+                    "children": [
+                     "Northern District of Oklahoma"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_32"
+                    }
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "h": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "emphasis": {
+                    "attributes": {
+                     "typeStyle": "un"
+                    },
+                    "children": [
+                     "District of South Carolina"
+                    ]
+                   }
+                  }
+                 ]
+                }
+               },
+               {
+                "p": {
+                 "attributes": {},
+                 "children": [
+                  {
+                   "anchor": {
+                    "attributes": {
+                     "id": "para_33"
+                    }
+                   }
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "metadata": {
+     "attributes": {},
+     "children": [
+      {
+       "{http://purl.org/dc/elements/1.1/}metadata": {
+        "attributes": {},
+        "children": [
+         {
+          "{http://purl.org/dc/elements/1.1/}creator": "Judicial Panel On Multidistrict Litigation"
+         },
+         {
+          "{http://purl.org/dc/elements/1.1/}publisher": "LexisNexis",
+          "{http://purl.org/dc/elements/1.1/}identifier": {
+           "attributes": {
+            "identifierScheme": "PGUID"
+           },
+           "children": [
+            "urn:contentItem:5NP7-4P61-F04T-800Y-00000-00"
+           ]
+          },
+          "{http://purl.org/dc/elements/1.1/}source": {
+           "attributes": {
+            "sourceScheme": "productContentSetIdentifier"
+           },
+           "children": [
+            "104440"
+           ]
+          },
+          "{http://purl.org/dc/elements/1.1/}date": {
+           "attributes": {
+            "dateType": "last-updated"
+           },
+           "children": [
+            "2017-06-03"
+           ]
+          }
+         }
+        ]
+       }
+      },
+      {
+       "pagination": {
+        "attributes": {},
+        "children": [
+         {
+          "paginationScheme": {
+           "attributes": {
+            "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+           }
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,493 @@
+[
+  {
+    "fullCaseName": "IN RE: SUNEDISON, INC., SECURITIES LITIGATION",
+    "docketNumber": "MDL No. 2742",
+    "courtName": "Judicial Panel On Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#4108#2#2017#125313#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "2017 U.S. Dist. LEXIS 125313"
+    },
+    "filedDate": {
+      "day": "02",
+      "month": "08",
+      "year": "2017",
+      "fullDate": "20170802"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "caseOpinionBy": "Sarah S. Vance",
+    "judges": [
+      "P. Kevin Castel"
+    ],
+    "citations": {
+      "#23143#110#7.1#": 1,
+      "#1828#123#000028#1407#": 3,
+      "#51717#3#000214#001350#": 2,
+      "#20556#3#000712#001381#": 2,
+      "#20556#3#000528#001345#": 2
+    }
+  },
+  {
+    "fullCaseName": "IN RE: TAXOTERE (DOCETAXEL) PRODUCTS LIABILITY LITIGATION",
+    "docketNumber": "MDL No. 2740",
+    "courtName": "Judicial Panel On Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#4108#2#2017#038715#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "2017 U.S. Dist. LEXIS 38715"
+    },
+    "filedDate": {
+      "day": "09",
+      "month": "03",
+      "year": "2017",
+      "fullDate": "20170309"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "judges": [
+      "Engelhardt",
+      "Kurt D. Engelhardt"
+    ],
+    "citations": {
+      "#51717#3#000220#001360#": 1,
+      "#4108#2#2016#138877#": 1,
+      "#1828#123#000028#1407#": 2,
+      "#23143#110#7.1#": 1
+    }
+  },
+  {
+    "fullCaseName": "IN RE: YOSEMITE NATIONAL PARK HANTAVIRUS LITIGATION",
+    "docketNumber": "MDL No. 2532",
+    "courtName": "Judicial Panel On Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#4108#2#2014#082888#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "2014 U.S. Dist. LEXIS 82888"
+    },
+    "filedDate": {
+      "day": "18",
+      "month": "06",
+      "year": "2014",
+      "fullDate": "20140618"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "citations": {
+      "#1828#123#000028#1407#": 2
+    }
+  },
+  {
+    "fullCaseName": "IN RE COLUMBIA/HCA HEALTHCARE CORP. QUI TAM LITIGATION",
+    "docketNumber": "DOCKET NO. 1281 ",
+    "courtName": "Judicial Panel On Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#4108#2#1999#023243#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "1999 U.S. Dist. LEXIS 23243"
+    },
+    "filedDate": {
+      "day": "22",
+      "month": "02",
+      "year": "1999",
+      "fullDate": "19990222"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "caseOpinionBy": "John F. ",
+    "judges": [
+      "Eric R. Havian",
+      "Nangle",
+      "Van Huseman",
+      "Thomas A. Spieczny",
+      "Charles R.",
+      "Dana M. Richens",
+      "Larry L. Crain",
+      "Steven A. Riley",
+      "Cliff Gordon",
+      "Gerald Stern",
+      "John G. Despriet",
+      "J. Mark Tipps",
+      "Edward A. Mallett",
+      "Bryan E. Larson",
+      "Stephen Meagher",
+      "Rene Haas",
+      "Paula D. Walker",
+      "Gerald M. Birnberg",
+      "David L. Curl",
+      "Ralph Midkiff",
+      "Ankur J. Goel"
+    ],
+    "citations": {
+      "#1828#123#000028#1407#": 7,
+      "#1828#123#000031#3729#": 2,
+      "#23143#110#7.2#": 1,
+      "#23143#110#7.4#": 1,
+      "#23143#110#7.5#": 1
+    }
+  },
+  {
+    "fullCaseName": "IN RE THE REGENTS OF THE UNIVERSITY OF CALIFORNIA AND IDEXX LABORATORIES, INC., PATENT LITIGATION; Regents of the University of California, et al. v. Veterinary Centers of America, Inc., C.D. California, C.A. No. 2:98-2878; Regents of the University of California, et al. v. Veterinary Centers of America, Inc., et al., C.D. California, C.A. No. 2:98-8344; Regents of the University of California, et al. v. Veterinary Centers of America, Inc., et al., E.D. New York, C.A. No. 9:98-6241",
+    "docketNumber": "DOCKET NO. 1262",
+    "courtName": "Judicial Panel On Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#4108#2#1999#001741#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "1999 U.S. Dist. LEXIS 1741"
+    },
+    "filedDate": {
+      "day": "19",
+      "month": "02",
+      "year": "1999",
+      "fullDate": "19990219"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "caseOpinionBy": "John F. Nangle",
+    "judges": [
+      "CLARENCE A. BRIMMER",
+      "JOHN F. KEENAN"
+    ],
+    "citations": {
+      "#1828#123#000028#1407#": 7,
+      "#23143#110#16.2#": 1,
+      "#588#3#000181#000001#": 2,
+      "#42#39#0005118602#": 1
+    }
+  },
+  {
+    "fullCaseName": "IN RE CABLE NEWS NETWORK AND TIME MAGAZINE \"OPERATION TAILWIND\" LITIGATION; Michael Sheppard, et al. v. Cable News Network, Inc., et al., N.D. California, C.A. No. 5:98-20946; Keith E. Plancich, et al. v. Cable News Network, Inc., et al., S.D.Florida, C.A. No. 1:98-1874",
+    "docketNumber": "DOCKET NO. 1257",
+    "courtName": "Judicial Panel On Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#4108#2#1999#001742#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "1999 U.S. Dist. LEXIS 1742"
+    },
+    "filedDate": {
+      "day": "17",
+      "month": "02",
+      "year": "1999",
+      "fullDate": "19990217"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "caseOpinionBy": "John F. Nangle",
+    "judges": [
+      "CLARENCE A. BRIMMER",
+      "JOHN F. KEENAN"
+    ],
+    "citations": {
+      "#1828#123#000028#1407#": 5,
+      "#23143#110#7.5#": 1,
+      "#588#3#000181#000001#": 2
+    }
+  },
+  {
+    "fullCaseName": "IN RE \"AGENT ORANGE\" PRODUCTS LIABILITY LITIGATION; Joe Isaacson, et al. v. Dow Chemical Co., et al., D. New Jersey, C.A. No. 3:98-3988",
+    "docketNumber": "DOCKET NO. 381, C.A. No. 3:98-3988",
+    "courtName": "Judicial Panel On Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#4108#2#1999#004286#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "1999 U.S. Dist. LEXIS 4286"
+    },
+    "filedDate": {
+      "day": "03",
+      "month": "02",
+      "year": "1999",
+      "fullDate": "19990203"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "caseOpinionBy": "John F. Nangle",
+    "judges": [
+      "Weinstein",
+      "Jack B. Weinstein",
+      "CLARENCE A. BRIMMER",
+      "JOHN F. KEENAN"
+    ],
+    "citations": {
+      "#23143#110#7.4#": 1,
+      "#588#3#000181#000001#": 2,
+      "#1828#123#000028#1407#": 2
+    }
+  },
+  {
+    "fullCaseName": "IN RE: MIRENA IUD PRODUCTS LIABILITY LITIGATION ",
+    "docketNumber": "MDL No. 2434 ",
+    "courtName": "Judicial Panel on Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#4108#2#2015#029100#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "2015 U.S. Dist. LEXIS 29100"
+    },
+    "filedDate": {
+      "day": "05",
+      "month": "03",
+      "year": "2015",
+      "fullDate": "20150305"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "citations": {
+      "#1828#123#000028#1407#": 2,
+      "#20556#3#000938#001355#": 1
+    }
+  },
+  {
+    "fullCaseName": "IN RE: VOLKSWAGEN \"CLEAN DIESEL\" MARKETING, SALES PRACTICES, AND PRODUCTS LIABILITY LITIGATION FILED Mar 01, 2016 ",
+    "docketNumber": "MDL No. 2672 ",
+    "courtName": "Judicial Panel on Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "2016 U.S. Dist. LEXIS 26025"
+    },
+    "filedDate": {
+      "day": "01",
+      "month": "03",
+      "year": "2016",
+      "fullDate": "20160301"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "citations": {
+      "#1828#123#000028#1407#": 2
+    }
+  },
+  {
+    "fullCaseName": "SOUTHERN DISTRICT OF INDIANA IN RE: COOK MEDICAL, INC., IVC FILTERS MARKETING, SALES PRACTICES AND PRODUCTS LIABILITY LITIGATION ",
+    "docketNumber": "MDL No. 2570 ",
+    "courtName": "Judicial Panel on Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#4108#2#2016#169948#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "2016 U.S. Dist. LEXIS 169948"
+    },
+    "filedDate": {
+      "day": "08",
+      "month": "12",
+      "year": "2016",
+      "fullDate": "20161208"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "citations": {
+      "#350#3#000901#000007#": 2,
+      "#20556#3#000170#001346#": 2,
+      "#1828#123#000028#1407#": 2,
+      "#51717#3#000053#001379#": 1
+    }
+  },
+  {
+    "fullCaseName": "IN RE: ACTOS PRODUCTS LIABILITY LITIGATION",
+    "docketNumber": "MDL No. 2299",
+    "courtName": "Judicial Panel on Multidistrict Litigation,",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#20417#2#2011#0006889721#",
+      "citeText": "2011 WL 6889721"
+    },
+    "filedDate": {
+      "day": "19",
+      "month": "12",
+      "year": "2011",
+      "fullDate": "20111219"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "caseOpinionBy": null,
+    "judges": [
+      "Sherry Ann Knutson",
+      "Sanford E. Watson, II",
+      "Dawn M. Chmielewski",
+      "Geoffrey Munroe",
+      "Rebecca F. Doherty",
+      "Jose Antonio Isasi, II",
+      "Roger C. Denton",
+      "Nathan A. Huey",
+      "A.J. De Bartolomeo",
+      "Paul J. Pennock, Esq.",
+      "Sara J. Gourley",
+      "Daniel J. Kurowski",
+      "Lori G. Cohen",
+      "Lauren P. Buford",
+      "MICHAEL P. MORRISSEY",
+      "Richard C. Harlan",
+      "Amy B. Alderfer",
+      "Kathryn H. Vratil",
+      "Paul J. Pennock",
+      "Charles R. Breyer",
+      "Marc Ian Willick",
+      "ELLEN RELKIN",
+      "Elizabeth A. Fegan",
+      "JOHN G. HEYBURN II",
+      "Marjorie O. Rendell",
+      "W. Royal Furgeson, Jr.",
+      "James D. Arden",
+      "Alycia Degen",
+      "Justin E. Rice",
+      "Paul J. Barbadoro",
+      "Erica M. James",
+      "Daniel C. Burke",
+      "Eric H. Gibbs",
+      "Daniel Charles Girard",
+      "Barbara S. Jones",
+      "J. Philip Calabrese",
+      "John G. Heyburn II",
+      "John R. Climaco",
+      "Colin J. Garry",
+      "Sherry A. Knutson"
+    ],
+    "citations": {
+      "#4108#2#2011#130936#": 1,
+      "#1828#123#000028#1407#": 2,
+      "#23143#110#7.1#": 1,
+      "#23143#110#7.2#": 1
+    }
+  },
+  {
+    "fullCaseName": " IN RE DEPUY ORTHOPAEDICS, INC., PINNACLE HIP IMPLANT PRODUCTS LIABILITY LITIGATION ",
+    "docketNumber": " MDL No. 2244 ",
+    "courtName": "Judicial Panel on Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#4108#2#2014#111243#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "2014 U.S. Dist. LEXIS 111243"
+    },
+    "filedDate": {
+      "day": "12",
+      "month": "08",
+      "year": "2014",
+      "fullDate": "20140812"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "citations": {
+      "#23143#110#7.1#": 1,
+      "#1828#123#000028#1407#": 2,
+      "#20556#3#000787#001358#": 1,
+      "#350#3#000901#000007#": 2,
+      "#20556#3#000170#001346#": 2,
+      "#23143#110#2.1#": 1,
+      "#23143#110#10.1#": 1
+    }
+  },
+  {
+    "fullCaseName": " '387&&/5. Aug 12, 2014 CLERK, U.S. DISTRICT COURT IN RE LIPITOR ATORVASTATIN CALCIUM EASTERN DISTRICT OF CALIFORNIA MARKETING, SALESPRACTICES AND PRODUCTS LIABILITY LITIGATION NO. II ",
+    "docketNumber": " MDL No. 2502 ",
+    "courtName": "Judicial Panel on Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#4108#2#2014#111241#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "2014 U.S. Dist. LEXIS 111241"
+    },
+    "filedDate": {
+      "day": "12",
+      "month": "08",
+      "year": "2014",
+      "fullDate": "20140812"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "citations": {
+      "#23143#110#7.1#": 1,
+      "#23143#110#2.1#": 1,
+      "#350#3#000901#000007#": 2,
+      "#1828#123#000028#1407#": 3,
+      "#20556#3#000939#001376#": 2,
+      "#1828#123#000028#1332#": 1,
+      "#20417#2#2014#0000661589#": 1
+    }
+  },
+  {
+    "fullCaseName": "IN RE: DEPUY ORTHOPAEDICS, INC., PINNACLE HIP IMPLANT PRODUCTS LIABILITY LITIGATION",
+    "docketNumber": "MDL No. 2244",
+    "courtName": "Judicial Panel on Multidistrict Litigation",
+    "jurisSystem": {
+      "normalizedLongName": "United States",
+      "normalizedShortName": "US"
+    },
+    "citeForThisResource": {
+      "citeDefinition": "#4108#2#2014#074801#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "citeText": "2014 U.S. Dist. LEXIS 74801"
+    },
+    "opinion": {
+      "opinionType": "majority"
+    },
+    "judges": [
+      "James Edgar Kinkeade",
+      "Kinkeade"
+    ],
+    "citations": {
+      "#4108#2#2014#057533#": 1,
+      "#1828#123#000028#1407#": 2,
+      "#23143#110#7.1#": 1
+    }
+  }
+]

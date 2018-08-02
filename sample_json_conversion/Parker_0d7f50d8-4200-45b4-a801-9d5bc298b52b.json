@@ -1,0 +1,372 @@
+{
+ "courtCaseDocHead": {
+  "caseInfo": {
+   "caseName": {
+    "fullCaseName": "IN RE: TOWNSEND FARMS ORGANIC ANTI-OXIDANT BLEND PRODUCTS LIABILITY LITIGATION",
+    "shortCaseName": "In re Townsend Farms Organic Anti-Oxidant Blend Prods. Liab. Litig."
+   },
+   "docketNumber": "MDL No. 2537",
+   "courtInfo": {
+    "courtName": "Judicial Panel On Multidistrict Litigation",
+    "jurisdiction": {
+     "jurisSystem": null
+    }
+   },
+   "citations": {
+    "citeForThisResource": "2014 U.S. Dist. LEXIS 75970"
+   },
+   "decisionDates": {
+    "filedDate": {
+     "dateText": "June 4, 2014"
+    }
+   }
+  },
+  "statusNotice": {
+   "publicationStatus": null
+  }
+ },
+ "courtCaseDocBody": {
+  "panel": {
+   "page": null,
+   "judges": {
+    "judge": [
+     {
+      "person": {
+       "nameText": "John G. Heyburn II"
+      }
+     },
+     {
+      "person": {
+       "nameText": "Marjorie O. Rendell"
+      }
+     },
+     {
+      "person": {
+       "nameText": "Lewis A. Kaplan"
+      }
+     },
+     {
+      "person": {
+       "nameText": "Ellen Segal Huvelle"
+      }
+     },
+     {
+      "person": {
+       "nameText": "Charles R. Breyer"
+      }
+     },
+     {
+      "person": {
+       "nameText": "Sarah S. Vance"
+      }
+     },
+     {
+      "person": {
+       "nameText": "R. David Proctor"
+      }
+     }
+    ]
+   }
+  },
+  "caseOpinions": {
+   "opinion": {
+    "caseOpinionBy": {
+     "judge": {
+      "person": {
+       "nameText": "John G. Heyburn II"
+      }
+     }
+    },
+    "bodyText": {
+     "h": {
+      "emphasis": "ORDER DENYING TRANSFER"
+     },
+     "p": [
+      {
+       "anchor": null,
+       "emphasis": "Before the Panel",
+       "citation": {
+        "content": {
+         "span": {
+          "locator": {
+           "locatorKey": {
+            "keyName": null,
+            "keyValue": null
+           }
+          }
+         }
+        }
+       }
+      },
+      {
+       "anchor": null,
+       "page": null
+      },
+      {
+       "anchor": null,
+       "page": null
+      },
+      {
+       "anchor": null,
+       "citation": [
+        {
+         "content": {
+          "span": {
+           "locator": {
+            "locatorKey": {
+             "keyName": null,
+             "keyValue": null
+            }
+           }
+          }
+         }
+        },
+        {
+         "content": {
+          "emphasis": "In re: Fresh Dairy Prods. Antitrust Litig",
+          "span": [
+           {
+            "locator": {
+             "locatorKey": {
+              "keyName": null,
+              "keyValue": null
+             }
+            }
+           },
+           {
+            "locator": {
+             "locatorKey": {
+              "keyName": null,
+              "keyValue": null
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "content": {
+          "emphasis": "In re: Trans Union LLC Fair Credit Reporting Act (FCRA) Litig",
+          "span": [
+           {
+            "locator": {
+             "locatorKey": {
+              "keyName": null,
+              "keyValue": null
+             }
+            }
+           },
+           {
+            "locator": {
+             "locatorKey": {
+              "keyName": null,
+              "keyValue": null
+             }
+            }
+           }
+          ]
+         }
+        },
+        {
+         "content": {
+          "emphasis": "In re: Yellow Brass Plumbing Component Prods. Liability Litig",
+          "span": [
+           {
+            "locator": {
+             "locatorKey": {
+              "keyName": null,
+              "keyValue": null
+             }
+            }
+           },
+           {
+            "locator": {
+             "locatorKey": {
+              "keyName": null,
+              "keyValue": null
+             }
+            }
+           }
+          ]
+         }
+        }
+       ],
+       "emphasis": [
+        "See, e.g., ",
+        "See, e.g., ",
+        "see also",
+        "Manual for Complex Litigation, Fourth"
+       ],
+       "page": null
+      },
+      {
+       "anchor": null,
+       "citation": {
+        "content": {
+         "span": {
+          "locator": {
+           "locatorKey": {
+            "keyName": null,
+            "keyValue": null
+           }
+          }
+         }
+        }
+       }
+      },
+      {
+       "anchor": null
+      },
+      {
+       "anchor": null,
+       "judge": {
+        "person": {
+         "nameText": "John G. Heyburn"
+        }
+       }
+      },
+      {
+       "anchor": null,
+       "judge": {
+        "person": {
+         "nameText": "John G. Heyburn II"
+        }
+       }
+      },
+      {
+       "anchor": null
+      },
+      {
+       "anchor": null,
+       "judge": {
+        "person": {
+         "nameText": "Marjorie O. Rendell"
+        }
+       }
+      },
+      {
+       "anchor": null,
+       "judge": {
+        "person": {
+         "nameText": "Lewis A. Kaplan"
+        }
+       }
+      },
+      {
+       "anchor": null,
+       "judge": {
+        "person": {
+         "nameText": "Ellen Segal Huvelle"
+        }
+       }
+      },
+      {
+       "anchor": null,
+       "judge": {
+        "person": {
+         "nameText": "Charles R. Breyer"
+        }
+       }
+      },
+      {
+       "anchor": null,
+       "judge": {
+        "person": {
+         "nameText": "Sarah S. Vance"
+        }
+       }
+      },
+      {
+       "anchor": null,
+       "judge": {
+        "person": {
+         "nameText": "R. David Proctor"
+        }
+       }
+      }
+     ],
+     "attachments": {
+      "appendix": {
+       "bodyText": {
+        "h": [
+         {
+          "emphasis": "SCHEDULE A"
+         },
+         {
+          "emphasis": "District of Arizona"
+         },
+         {
+          "emphasis": "Central District of California"
+         },
+         {
+          "emphasis": "District of Colorado"
+         },
+         {
+          "emphasis": "District of Hawaii"
+         },
+         {
+          "emphasis": "District of Idaho"
+         },
+         {
+          "emphasis": "District of Nevada"
+         },
+         {
+          "emphasis": "District of New Mexico"
+         },
+         {
+          "emphasis": "District of Oregon"
+         },
+         {
+          "emphasis": "Western District of Washington"
+         }
+        ],
+        "p": [
+         {
+          "anchor": null
+         },
+         {
+          "anchor": null
+         },
+         {
+          "anchor": null
+         },
+         {
+          "anchor": null
+         },
+         {
+          "anchor": null
+         },
+         {
+          "anchor": null
+         },
+         {
+          "anchor": null,
+          "page": null
+         },
+         {
+          "anchor": null
+         },
+         {
+          "anchor": null
+         }
+        ]
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "metadata": {
+  "{http://purl.org/dc/elements/1.1/}metadata": {
+   "{http://purl.org/dc/elements/1.1/}creator": "Judicial Panel On Multidistrict Litigation",
+   "{http://purl.org/dc/elements/1.1/}publisher": "LexisNexis",
+   "{http://purl.org/dc/elements/1.1/}identifier": "urn:contentItem:5CC2-D931-F04T-8000-00000-00",
+   "{http://purl.org/dc/elements/1.1/}source": 104440,
+   "{http://purl.org/dc/elements/1.1/}date": "2014-06-14"
+  },
+  "pagination": {
+   "paginationScheme": null
+  }
+ }
+}

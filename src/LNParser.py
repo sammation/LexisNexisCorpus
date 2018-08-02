@@ -6,73 +6,79 @@
 
 import os 
 import pandas as pd
-from collections import defaultdict, Counter
+from collections import defaultdict, Counter, OrderedDict
 import re
 import json
 from subprocess import call
 import zipfile as zf
 from extract_all_tags import * 
+import pymongo
+from xmljson import Yahoo 
+from pathlib import Path
+from xml.etree import ElementTree
+from math import floor
+from parse_cases import parse_case
 
 repo_dir = os.path.expanduser(r"~/LexisNexisCorpus")
 zip_dir = os.path.expanduser(r"~/data/content-zip/content")
 states_summ_fn = "states_counts.csv" 
-'''
-class LNParser(object):
-    
-    def __init__(self, zip_dir, zip_files, repo_dir):
-        self.repo_dir = repo_dir
-        self.zip_dir = zip_dir
-        self.zip_files = zip_files
-        
 
-    def copy_and_unzip(zipfn):
-        print("copying", zipfn)
-        copy_zip_file(zipfile)
-        print("unzipping", zipfn)
-        unzip_file(zipfile)
+courtCaseRE = r"<courtCaseDoc.*?/courtCaseDoc>"
 
-    def delete_zip(zipfn):
-        print("deleting", zipfn)
-        delete_zip_file(zipfn)
-        unzip_dir = os.path.join(repo_dir,'content',zipfn[:-4])
-        print("deleting",unzip_dir)
-        delete_unzipped_folder(unzip_dir)
+xmlConverter = Yahoo()
+progress = [i/10 for i in range(11)]
+errorfn = "errors.txt" 
 
-    def demo_extract_tag(self, tagName, save = False):
-        return self._extract_tag_from_files(tagName, list(self.zip_files[0]), save)
+def parseDir(mongoCollection, pathToSourceDir):
+	sourceDir = Path(pathToSourceDir)
+	files = [f for f in sourceDir.iterdir() if f.is_file()] 
+	currProgress = set([floor(i * len(files)) for i in progress])
+	for i, f in enumerate(files): 
+		for parsedCase in parseFile(f):
+			try: 
+				#print(parsedCase)
+				mongoCollection.insert_one(parsedCase)
+			except Exception as e: 
+				with open(errorfn, 'a') as eFile:
+					print("upload error: " + str(f))
+					eFile.write(','.join((str(f.absolute()), "upload error")))
+		if i in currProgress: 
+			print("{0}/{1} files done in {2}".format(i, len(files), pathToSourceDir))
 
-    def extract_tag_from_all_files(self,tagName, save=False):
-        return self._extract_tag_from_files(tagName, self.zip_files, save)
+def parseFile(pathFile):
+	parsedCases = [] 
+	with pathFile.open() as infile: 
+		for m in re.findall(courtCaseRE, infile.read()): 
+			try: 
+				parsedCase = parse_case(m) 
+				parsedCases.append(parsedCase) 
+			except Exception as e:
+				with open(errorfn,'a') as eFile: 
+					print("parse error: " + str(pathFile))
+					print(repr(e))
+					eFile.write(','.join((str(pathFile.absolute()), "parse error")))
+	return parsedCases
 
-    def _extract_tag_from_files(self, tagName, zip_files, save = False):
-        tag_re = "<{}.*?</{}>"
-        tag = defaultdict(lambda: defaultdict(list))
-        content_dir = os.path.join(self.repo_dir, 'content')
-        errors = []  
-        for zipfn in zip_files:
-            try:
-                LNParser.copy_and_unzip(zipfn)
-                
-                num = zipfn[:-4]
-                unzipped_content_dir = os.path.join(content_dir, num)
-                all_fns = os.listdir(unzipped_content_dir)
-                num_all_fns = len(all_fns)
-                for fn in all_fns:
-                    fn_fullPath = os.path.join(unzipped_content_dir, fn)
-                    if os.path.isfile(fn_fullPath): 
-                        with open(fn_fullPath) as in_fp: 
-                            # TODO: avoid full file read()
-                            for match in re.findall(tag_re, infile.read())
-                                tag[zipfn][fn].append(str(match))
-            except Exception as e:
-                errors.append((zipfn, e.message))
-            
-            delete_zip(zipfn)
+def uploadDir(mongoCollection, pathToSourceDir): 
+	parseDir(mongoCollection, pathToSourceDir)	
 
-        if save: 
-            json.dumps(tag, os.path.join(self.repo_dir,'tags',f"{tagName}.json"))
-            json.dumps(errors, os.path.join(self.repo_dir,'errors.json'))
-
-        return tag, errors
-'''
+if __name__ == "__main__": 
+	zipfiles = [z for z in get_all_state_zips() if z.endswith(".zip")]
+	client = pymongo.MongoClient()
+	db = client.LexisNexis
+	mongoCollection = db["cases"]
+	for i, zf in enumerate(zipfiles):
+		print("--------------------------")
+		print("Starting zip file {0}/{1}".format(i, len(zipfiles)))
+		print("Copying", zf)
+		copy_zip_file(zf)
+		print("Unzipping", zf)
+		unzip_file(zf)
+		num = zf[:-4] 
+		print("Parsing cases")
+		uploadDir(mongoCollection, os.path.join(repo_dir, 'content', num))
+		print("Deleting", zf)
+		delete_zip_file(zf)
+		print("Deleting zip dir "+ zf)
+		delete_unzipped_folder(os.path.join(repo_dir,'content',num))
 

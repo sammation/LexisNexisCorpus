@@ -1,0 +1,932 @@
+{
+ "courtCaseDoc": {
+  "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "http://www.lexisnexis.com/xmlschemas/content/public/courtcasedoc/1/",
+  "schemaVersion": "1.0",
+  "courtCaseDocHead": {
+   "caseInfo": {
+    "caseName": {
+     "fullCaseName": "IN RE: ETHICON PHYSIOMESH FLEXIBLE COMPOSITE HERNIA MESH PRODUCTS LIABILITY LITIGATION",
+     "shortCaseName": {
+      "party1": "Ethicon Physiomesh Flexible Composite Hernia Mesh Prods. Liab. Litig.",
+      "content": "In re Ethicon Physiomesh Flexible Composite Hernia Mesh Prods. Liab. Litig."
+     }
+    },
+    "docketNumber": "MDL No. 2782",
+    "courtInfo": {
+     "courtName": "Judicial Panel on Multidistrict Litigation",
+     "jurisdiction": {
+      "jurisSystem": {
+       "normalizedLongName": "United States",
+       "normalizedShortName": "US"
+      }
+     }
+    },
+    "citations": {
+     "citeForThisResource": {
+      "citeDefinition": "#4108#2#2017#084431#",
+      "pageScheme": "U.S. Dist. LEXIS",
+      "content": "2017 U.S. Dist. LEXIS 84431"
+     }
+    },
+    "decisionDates": {
+     "filedDate": {
+      "day": "02",
+      "month": "06",
+      "year": "2017",
+      "dateText": "June 2, 2017"
+     }
+    }
+   },
+   "caseHistory": {
+    "priorHistory": {
+     "appealHistory": {
+      "historyCite": [
+       {
+        "citation": {
+         "type": "case",
+         "id": "I5NPVVKN1T51770030000400",
+         "guid": "urn:historyCitation:I5NPVVKN1T51770030000400",
+         "content": {
+          "content": "Huff v. Ethicon, Inc.,",
+          "span": {
+           "normalizedCite": "2016 U.S. Dist. LEXIS 47203",
+           "content": "2016 U.S. Dist. LEXIS 47203",
+           "locator": {
+            "locatorKey": {
+             "keyName": {
+              "name": "citeReference"
+             },
+             "keyValue": {
+              "value": "#4108#2#2016#047203#"
+             }
+            }
+           }
+          }
+         }
+        }
+       },
+       {
+        "citation": {
+         "type": "case",
+         "id": "I5NPVVKN1XJH0W0030000400",
+         "guid": "urn:historyCitation:I5NPVVKN1XJH0W0030000400",
+         "content": {
+          "content": "Graham v. Johnson & Johnson,",
+          "span": {
+           "normalizedCite": "2017 U.S. Dist. LEXIS 29056",
+           "content": "2017 U.S. Dist. LEXIS 29056",
+           "locator": {
+            "locatorKey": {
+             "keyName": {
+              "name": "citeReference"
+             },
+             "keyValue": {
+              "value": "#4108#2#2017#029056#"
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      ]
+     }
+    }
+   },
+   "summaries": {}
+  },
+  "courtCaseDocBody": {
+   "representation": {
+    "counsel": [
+     "For Bilyana Barakova, Valeri Barakova (1:17cv543), Plaintiffs: Aimee Hall Wagstaff, Andrus Wagstaff, P.C., Lakewood, CO.",
+     "For Johnson & Johnson, Ethicon, Inc. (1:17cv543), Defendants: Adam Patrick O'Brien, Mary Alice Wells, Wells Anderson & Race, LLC, Denver, CO; Fred E. Bourn, III, Butler Snow LLP-Ridgeland, Ridgeland, MS.",
+     "For Alison Keefer, Erik Keefer (1:17cv603), Plaintiffs: Christopher Bryan Fears, LEAD ATTORNEY, Fears Nachawati, PLLC, Dallas, TX; Aimee Hall Wagstaff, Andrus Wagstaff, P.C., Lakewood, CO.",
+     "For Lillian Graham (3:17cv229), Plaintiff: Andrew Allen Norden, Joseph A. Osborne, LEAD ATTORNEYS, Osborne & Associates Law Firm P.A., Boca Raton, FL.",
+     "For Johnson & Johnson, Ethicon, Inc. (3:17cv229, 6:17cv503), Defendants: William E. Lawton, LEAD ATTORNEY, Dean, Ringers, Morgan & Lawton, PA, Orlando, FL.",
+     "For Joanne Quinn (6:16cv1663), Plaintiff: Anna Yarovich Lenchus, LEAD ATTORNEY, Florida Justice Law Group, Boca Raton, FL.",
+     "For Ethicon, Inc. , Johnson & Johnson (6:16cv1663, 8:16cv3502, 8:17cv113), Defendants: Richard McLure Dye, LEAD ATTORNEY, PRO HAC VICE, Butler Snow, LLP, Ridgeland, MS; William E. Lawton, LEAD ATTORNEY, Dean, Ringers, Morgan & Lawton, PA, Orlando, FL.",
+     "For Edith J. Carr, David Middleton Carr (6:17cv393), Plaintiffs: Daniel James Thornburgh, Douglass A. Kreis, Nathan Charles Bess, LEAD ATTORNEYS, Aylstock, Witkin, Kreis & Overholtz, PLLC, Pensacola, FL.",
+     "For Patricia Miller (6:17cv503), Plaintiff: James Beckett Thompson, Jr, LEAD ATTORNEY, Thompson, Goodis, Thompson, Groseclose & Richardson, PA, St Petersburg, FL; Jeffrey Marc Goodis, LEAD ATTORNEY, Goodis, Thompson & Miller, PA, St Petersburg, FL.",
+     "For Sarah Ann Gilman (8:16cv3502), Plaintiff: Daniel James Thornburgh, Douglass A. Kreis, Nathan Charles Bess, LEAD ATTORNEYS, Aylstock, Witkin, Kreis & Overholtz, PLLC, Pensacola, FL.",
+     "For David A. Sunter (8:17cv113), Plaintiff: Daniel James Thornburgh, Douglass A. Kreis, Nathan Charles Bess, LEAD ATTORNEYS, Aylstock, Witkin, Kreis & Overholtz, PLLC, Pensacola, FL.",
+     "For Connie Franklin, Marvin Franklin (4:17cv31), Plaintiffs: Andrew Judson Hill, III, Josh B. Wages, James B. Matthews, III, Patrick Hammond Garrard, LEAD ATTORNEYS, HENRY G GARRARD, III, BLASINGAME, BURCH GARRARD & ASHLEY PC, Athens, GA.",
+     "For Johnson & Johnson, Ethicon Inc (4:17cv31), Defendants: Nancy Karen Deming, LEAD ATTORNEY, Atlanta, GA; RICHARD MCLURE DYE, LEAD ATTORNEY, Ridgeland, MS; DAVID F. NORDEN, Troutman Sanders, LLP, Atlanta, GA.",
+     "For Henry Lee Brown (4:17cv36), Plaintiff: Andrew Judson Hill, III, Henry G. Garrard, III, James B. Matthews, III, Josh B. Wages, Patrick Hammond Garrard,  LEAD ATTORNEYS, Blasingame, Burch, Garrard & Ashley, P.C., Athens, GA.",
+     "For Johnson & Johnson, Ethicon, Inc. (4:17cv36, 4:17cv40), Defendants: Nancy Karen Deming, LEAD ATTORNEY, David F. Norden, Troutman Sanders,Atlanta, GA.",
+     "For Jeffrey Leyton Winfrey (4:17cv40), Plaintiff: Andrew Judson Hill, III, Henry G. Garrard , III, James B. Matthews, III, Josh B. Wages, Patrick Hammond Garrard, LEAD ATTORNEYS, Blasingame, Burch, Garrard & Ashley, P.C., Athens, GA.",
+     "For Matthew Huff (3:16cv368), Plaintiff: Blake Charles Erskine, Erskine & McMahon, LLP, Longview, TX; Danny M. Stroup, Dan Stroup, PC, Longview, TX; William A. Alexander, Matthew H. Caraway, Sam C. Mitchell and Associates, West Frankfort, IL.",
+     "For Ethicon, Inc. (3:16cv368), Defendant: Bettina J. Strauss, Dan H. Ball, Bryan Cave LLP, St. Louis, MO; Fred E. Bourn, III, Butler, Snow et al, Ridgeland, MS.",
+     "For Doreen Worrell (3:17cv172), Plaintiff: Andrew J. Cross, Sarah Shoemake Doles, Carey, Danis and Lowe, St. Louis, MO.",
+     "For Ethicon, Inc., Johnson & Johnson (3:17cv172), Defendants: Dan H. Ball, LEAD ATTORNEY, Bettina J. Strauss, Bryan Cave LLP, St. Louis, MO.",
+     "For Robert B. Carrillo (7:17cv37), Plaintiff: Gary Steve Logsdon, LEAD ATTORNEY, Gary S. Logsdon & Associates, PCC, Brownsville, KY.",
+     "For Johnson & Johnson, Ethicon, Inc. (7:17cv37), Defendants: Fred E. Bourn, III, LEAD ATTORNEY, PRO HAC VICE, Butler Snow LLP, Ridgeland, MS; Susan J. Pope, LEAD ATTORNEY, Frost Brown Todd LLC, Lexington, KY.",
+     "For David Watring (1:16cv12278), Plaintiff: Robert T. Naumes, Jr., LEAD ATTORNEY, The Law Office of Jeffrey S. Glassman, Boston, MA.",
+     "For Ethicon, Inc. (1:16cv12278), Defendant: Fred E. Bourn, III, LEAD ATTORNEY, PRO HAC VICE, Butler Snow LLP, Ridgeland, MS; James M. Campbell, Peter John Veysey, Jr., Campbell, Campbell, Edwards & Conroy, PC, Boston, MA.",
+     "For David Ramey (3:17cv1455), Plaintiff: DAVID B. KRANGLE, LEAD ATTORNEY, Alonso Krangle LLP, Melville, NY.",
+     "For Gabrielle Cox (4:16cv729), Plaintiff: Paul Telhiard Boudreaux, LEAD ATTORNEY, Richardson Richardson Boudreaux, Tulsa, OK.",
+     "For Ethicon, Inc. (4:16cv729), Defendant: Amy Sherry-Fischer, Larry D. Ottaway, LEAD ATTORNEYS, Foliart Huff Ottaway & Bottom, Oklahoma City, OK; Fred E (Trey) Bourn, III, LEAD ATTORNEY, Butler Snow O'Mara Stevens & Cannada PLLC (MS), Ridgeland, MS.",
+     "For Eddie Shelton, Nancy Shelton (2:17cv614), Plaintiffs: Fred Thompson, III, LEAD ATTORNEY, Motley Rice, Mt Pleasant, SC.",
+     "For Johnson & Johnson, Ethicon Inc (2:17cv614), Defendants: Amanda S. Kitts, David Eidson Dukes, LEAD ATTORNEYS, Nelson Mullins Riley and Scarborough, Columbia, SC."
+    ]
+   },
+   "panel": {
+    "judges": {
+     "page": {
+      "number": "1",
+      "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+     },
+     "judge": [
+      {
+       "person": {
+        "nameText": "Sarah S. Vance"
+       }
+      },
+      {
+       "person": {
+        "nameText": "Marjorie O. Rendell"
+       }
+      },
+      {
+       "person": {
+        "nameText": "R. David Proctor"
+       }
+      },
+      {
+       "person": {
+        "nameText": "Ellen Segal Huvelle"
+       }
+      },
+      {
+       "person": {
+        "nameText": "Catherine D. Perry"
+       }
+      }
+     ]
+    }
+   },
+   "caseOpinions": {
+    "opinion": {
+     "opinionType": "majority",
+     "caseOpinionBy": {
+      "judge": {
+       "person": {
+        "nameText": "Sarah S. Vance"
+       }
+      }
+     },
+     "bodyText": {
+      "h": [
+       {
+        "emphasis": {
+         "typeStyle": "bf",
+         "content": "TRANSFER ORDER"
+        }
+       },
+       {
+        "emphasis": {
+         "typeStyle": "bf",
+         "content": "SCHEDULE A"
+        }
+       },
+       {
+        "emphasis": {
+         "typeStyle": "un",
+         "content": "District of Colorado"
+        }
+       },
+       {
+        "emphasis": {
+         "typeStyle": "un",
+         "content": "Middle District of Florida"
+        }
+       },
+       {
+        "emphasis": {
+         "typeStyle": "un",
+         "content": "Middle District of Georgia"
+        }
+       },
+       {
+        "emphasis": {
+         "typeStyle": "un",
+         "content": "Northern District of Georgia"
+        }
+       },
+       {
+        "emphasis": {
+         "typeStyle": "un",
+         "content": "Southern District of Illinois"
+        }
+       },
+       {
+        "emphasis": {
+         "typeStyle": "un",
+         "content": "Eastern District of Kentucky"
+        }
+       },
+       {
+        "emphasis": {
+         "typeStyle": "un",
+         "content": "District of Massachusetts"
+        }
+       },
+       {
+        "emphasis": {
+         "typeStyle": "un",
+         "content": "District of New Jersey"
+        }
+       },
+       {
+        "emphasis": {
+         "typeStyle": "un",
+         "content": "Northern District of Oklahoma"
+        }
+       },
+       {
+        "emphasis": {
+         "typeStyle": "un",
+         "content": "District of South Carolina"
+        }
+       }
+      ],
+      "p": [
+       {
+        "anchor": {
+         "id": "para_1"
+        },
+        "emphasis": {
+         "typeStyle": "bf",
+         "content": "Before the Panel:"
+        },
+        "footnote": [
+         {
+          "anchor": {
+           "id": "fn_fnote1"
+          },
+          "label": "*",
+          "bodyText": {
+           "p": {
+            "anchor": {
+             "id": "fnpara_1"
+            },
+            "judge": [
+             {
+              "person": {
+               "nameText": "Charles R. Breyer"
+              }
+             },
+             {
+              "person": {
+               "nameText": "Lewis A. Kaplan"
+              }
+             }
+            ]
+           }
+          }
+         },
+         {
+          "anchor": {
+           "id": "fn_fnote2"
+          },
+          "label": "1",
+          "bodyText": {
+           "p": {
+            "anchor": {
+             "id": "fnpara_2"
+            },
+            "emphasis": {
+             "typeStyle": "it",
+             "content": "See"
+            },
+            "citation": [
+             {
+              "type": "courtRule",
+              "id": "I5NPF7MM2HM5RR0020000400",
+              "guid": "urn:citation:I5NPF7MM2HM5RR0020000400",
+              "normalizedCite": "FED. JUD. PANEL MULTI-DIST. LITIG. 1.1",
+              "content": {
+               "span": {
+                "normalizedCite": "Fed. Jud. Panel Multi-Dist. Litig. 1.1 (h)",
+                "content": "Panel Rules 1.1(h)",
+                "locator": {
+                 "locatorKey": {
+                  "keyName": {
+                   "name": "citeReference"
+                  },
+                  "keyValue": {
+                   "value": "#23143#110#   1.1#"
+                  }
+                 }
+                }
+               }
+              }
+             },
+             {
+              "type": "courtRule",
+              "id": "I5NPF7MM2HM5RR0030000400",
+              "guid": "urn:citation:I5NPF7MM2HM5RR0030000400",
+              "normalizedCite": "FED. JUD. PANEL MULTI-DIST. LITIG. 7.1",
+              "content": {
+               "span": {
+                "normalizedCite": "Fed. Jud. Panel Multi-Dist. Litig. 7.1",
+                "content": "7.1",
+                "locator": {
+                 "locatorKey": {
+                  "keyName": {
+                   "name": "citeReference"
+                  },
+                  "keyValue": {
+                   "value": "#23143#110#   7.1#"
+                  }
+                 }
+                }
+               }
+              }
+             },
+             {
+              "type": "courtRule",
+              "id": "I5NPF7MM2HM5RR0040000400",
+              "guid": "urn:citation:I5NPF7MM2HM5RR0040000400",
+              "normalizedCite": "FED. JUD. PANEL MULTI-DIST. LITIG. 7.2",
+              "content": {
+               "span": {
+                "normalizedCite": "Fed. Jud. Panel Multi-Dist. Litig. 7.2",
+                "content": "7.2",
+                "locator": {
+                 "locatorKey": {
+                  "keyName": {
+                   "name": "citeReference"
+                  },
+                  "keyValue": {
+                   "value": "#23143#110#   7.2#"
+                  }
+                 }
+                }
+               }
+              }
+             }
+            ]
+           }
+          }
+         }
+        ],
+        "citation": {
+         "type": "statute",
+         "id": "I5NPF7MM2HM5RR0010000400",
+         "guid": "urn:citation:I5NPF7MM2HM5RR0010000400",
+         "normalizedCite": "28 U.S.C. 1407",
+         "content": {
+          "span": {
+           "normalizedCite": "28 U.S.C. 1407",
+           "content": "28 U.S.C. \u00a7 1407",
+           "locator": {
+            "locatorKey": {
+             "keyName": {
+              "name": "citeReference"
+             },
+             "keyValue": {
+              "value": "#1828#123#000028#       1407#"
+             }
+            }
+           }
+          }
+         }
+        },
+        "page": {
+         "number": "2",
+         "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_2"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_3"
+        },
+        "page": {
+         "number": "3",
+         "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+        },
+        "emphasis": {
+         "typeStyle": "it",
+         "content": "inter alia"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_4"
+        },
+        "emphasis": [
+         {
+          "typeStyle": "it",
+          "content": "See, e.g.,"
+         },
+         {
+          "typeStyle": "it",
+          "content": "see also"
+         }
+        ],
+        "citation": [
+         {
+          "type": "case",
+          "id": "I5NPF7MM2HM5RR0060000400",
+          "guid": "urn:citation:I5NPF7MM2HM5RR0060000400",
+          "content": {
+           "emphasis": {
+            "typeStyle": "it",
+            "content": "In re: Cook Medical, Inc., IVC Filters Mktg., Sales Practices & Prods. Liab. Litig."
+           },
+           "span": [
+            {
+             "normalizedCite": "53 F. Supp. 3d 1379",
+             "content": "53 F. Supp. 3d 1379",
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#51717#3#000053#001379#"
+               }
+              }
+             }
+            },
+            {
+             "normalizedCite": "53 F. Supp. 3d 1379",
+             "content": "1381",
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#51717#3#000053#001379#"
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "type": "case",
+          "id": "I5NPF7MM2HM5RR00B0000400",
+          "guid": "urn:citation:I5NPF7MM2HM5RR00B0000400",
+          "content": {
+           "span": {
+            "normalizedCite": "53 F. Supp. 3d 1379",
+            "emphasis": {
+             "typeStyle": "it",
+             "content": "Id."
+            },
+            "locator": {
+             "locatorKey": {
+              "keyName": {
+               "name": "citeReference"
+              },
+              "keyValue": {
+               "value": "#51717#3#000053#001379#"
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "type": "case",
+          "id": "I5NPF7MM2HM5RR00D0000400",
+          "guid": "urn:citation:I5NPF7MM2HM5RR00D0000400",
+          "content": {
+           "emphasis": {
+            "typeStyle": "it",
+            "content": "In re: Wright Med. Tech., Inc., Conserve Hip Implant Prods. Liab. Litig."
+           },
+           "span": [
+            {
+             "normalizedCite": "844 F. Supp. 2d 1371",
+             "content": "844 F. Supp. 2d 1371",
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#20556#3#000844#001371#"
+               }
+              }
+             }
+            },
+            {
+             "normalizedCite": "844 F. Supp. 2d 1371",
+             "content": "1372",
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#20556#3#000844#001371#"
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "type": "case",
+          "id": "I5NPF7MM2HM5RR00J0000400",
+          "guid": "urn:citation:I5NPF7MM2HM5RR00J0000400",
+          "content": {
+           "emphasis": {
+            "typeStyle": "it",
+            "content": "In re: Zimmer Durom Hip Cup Prods. Liab. Litig."
+           },
+           "span": [
+            {
+             "normalizedCite": "717 F. Supp. 2d 1376",
+             "content": "717 F. Supp. 2d 1376",
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#20556#3#000717#001376#"
+               }
+              }
+             }
+            },
+            {
+             "normalizedCite": "717 F. Supp. 2d 1376",
+             "content": "1378",
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#20556#3#000717#001376#"
+               }
+              }
+             }
+            }
+           ]
+          }
+         }
+        ],
+        "page": {
+         "number": "4",
+         "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_5"
+        },
+        "emphasis": [
+         {
+          "typeStyle": "it",
+          "content": "See"
+         },
+         {
+          "typeStyle": "it",
+          "content": "see also"
+         }
+        ],
+        "citation": [
+         {
+          "type": "case",
+          "id": "I5NPF7MM2HM5RR00P0000400",
+          "guid": "urn:citation:I5NPF7MM2HM5RR00P0000400",
+          "content": {
+           "emphasis": {
+            "typeStyle": "it",
+            "content": "In re: Seroquel Prods. Liab. Litig."
+           },
+           "span": [
+            {
+             "normalizedCite": "447 F. Supp. 2d 1376",
+             "content": "447 F. Supp. 2d 1376",
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#20556#3#000447#001376#"
+               }
+              }
+             }
+            },
+            {
+             "normalizedCite": "447 F. Supp. 2d 1376",
+             "content": "1378",
+             "locator": {
+              "locatorKey": {
+               "keyName": {
+                "name": "citeReference"
+               },
+               "keyValue": {
+                "value": "#20556#3#000447#001376#"
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "type": "case",
+          "id": "I5NPF7MM2HM5RR00V0000400",
+          "guid": "urn:citation:I5NPF7MM2HM5RR00V0000400",
+          "content": {
+           "span": {
+            "normalizedCite": "53 F. Supp. 3d 1379",
+            "emphasis": {
+             "typeStyle": "it",
+             "content": "In re: Cook IVC Filters"
+            },
+            "locator": {
+             "locatorKey": {
+              "keyName": {
+               "name": "citeReference"
+              },
+              "keyValue": {
+               "value": "#51717#3#000053#001379#"
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "type": "case",
+          "id": "I5NPF7MM2HM5RR00X0000400",
+          "guid": "urn:citation:I5NPF7MM2HM5RR00X0000400",
+          "content": {
+           "emphasis": {
+            "typeStyle": "it",
+            "content": "In re: Seroquel"
+           },
+           "span": {
+            "normalizedCite": "447 F. Supp. 2d 1376",
+            "content": "447 F. Supp. 2d at 1378",
+            "locator": {
+             "locatorKey": {
+              "keyName": {
+               "name": "citeReference"
+              },
+              "keyValue": {
+               "value": "#20556#3#000447#001376#"
+              }
+             }
+            }
+           }
+          }
+         }
+        ]
+       },
+       {
+        "anchor": {
+         "id": "para_6"
+        },
+        "citation": {
+         "type": "statute",
+         "id": "I5NPF7MM2HM5RR00Y0000400",
+         "guid": "urn:citation:I5NPF7MM2HM5RR00Y0000400",
+         "normalizedCite": "28 U.S.C. 1407",
+         "content": {
+          "span": {
+           "normalizedCite": "28 U.S.C. 1407",
+           "content": "Section 1407",
+           "locator": {
+            "locatorKey": {
+             "keyName": {
+              "name": "citeReference"
+             },
+             "keyValue": {
+              "value": "#1828#123#000028#       1407#"
+             }
+            }
+           }
+          }
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_7"
+        },
+        "page": {
+         "number": "5",
+         "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+        },
+        "judge": {
+         "person": {
+          "nameText": "Richard W. Story"
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_8"
+        },
+        "judge": {
+         "person": {
+          "nameText": "Richard W. Story"
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_9"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_10"
+        },
+        "judge": {
+         "person": {
+          "nameText": "Sarah S. Vance"
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_11"
+        },
+        "judge": {
+         "person": {
+          "nameText": "Sarah S. Vance"
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_12"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_13"
+        },
+        "judge": {
+         "person": {
+          "nameText": "Marjorie O. Rendell"
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_14"
+        },
+        "judge": {
+         "person": {
+          "nameText": "R. David Proctor"
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_15"
+        },
+        "judge": {
+         "person": {
+          "nameText": "Ellen Segal Huvelle"
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_16"
+        },
+        "judge": {
+         "person": {
+          "nameText": "Catherine D. Perry"
+         }
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_17"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_18"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_19"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_20"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_21"
+        },
+        "page": {
+         "number": "6",
+         "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_22"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_23"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_24"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_25"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_26"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_27"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_28"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_29"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_30"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_31"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_32"
+        }
+       },
+       {
+        "anchor": {
+         "id": "para_33"
+        }
+       }
+      ]
+     }
+    }
+   }
+  },
+  "metadata": {
+   "{http://purl.org/dc/elements/1.1/}metadata": {
+    "{http://purl.org/dc/elements/1.1/}creator": "Judicial Panel On Multidistrict Litigation",
+    "{http://purl.org/dc/elements/1.1/}publisher": "LexisNexis",
+    "{http://purl.org/dc/elements/1.1/}identifier": {
+     "identifierScheme": "PGUID",
+     "content": "urn:contentItem:5NP7-4P61-F04T-800Y-00000-00"
+    },
+    "{http://purl.org/dc/elements/1.1/}source": {
+     "sourceScheme": "productContentSetIdentifier",
+     "content": "104440"
+    },
+    "{http://purl.org/dc/elements/1.1/}date": {
+     "dateType": "last-updated",
+     "content": "2017-06-03"
+    }
+   },
+   "pagination": {
+    "paginationScheme": {
+     "pageScheme": "2017 U.S. Dist. LEXIS 84431"
+    }
+   }
+  }
+ }
+}
