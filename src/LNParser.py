@@ -42,6 +42,7 @@ def parseDir(mongoCollection, pathToSourceDir):
 				with open(errorfn, 'a') as eFile:
 					print("upload error: " + str(f))
 					eFile.write(','.join((str(f.absolute()), "upload error")))
+					eFile.write("\n")
 		if i in currProgress: 
 			print("{0}/{1} files done in {2}".format(i, len(files), pathToSourceDir))
 
@@ -57,6 +58,7 @@ def parseFile(pathFile):
 					print("parse error: " + str(pathFile))
 					print(repr(e))
 					eFile.write(','.join((str(pathFile.absolute()), "parse error")))
+					eFile.write("\n")
 	return parsedCases
 
 def uploadDir(mongoCollection, pathToSourceDir): 
@@ -67,18 +69,23 @@ if __name__ == "__main__":
 	client = pymongo.MongoClient()
 	db = client.LexisNexis
 	mongoCollection = db["cases"]
-	for i, zf in enumerate(zipfiles):
+	for i, zf in enumerate(zipfiles[23:]):
 		print("--------------------------")
 		print("Starting zip file {0}/{1}".format(i, len(zipfiles)))
-		print("Copying", zf)
-		copy_zip_file(zf)
-		print("Unzipping", zf)
-		unzip_file(zf)
-		num = zf[:-4] 
-		print("Parsing cases")
-		uploadDir(mongoCollection, os.path.join(repo_dir, 'content', num))
-		print("Deleting", zf)
-		delete_zip_file(zf)
-		print("Deleting zip dir "+ zf)
-		delete_unzipped_folder(os.path.join(repo_dir,'content',num))
-
+		try:
+			print("Copying", zf)
+			copy_zip_file(zf)
+			print("Unzipping", zf)
+			unzip_file(zf)
+			num = zf[:-4] 
+			print("Parsing cases")
+			uploadDir(mongoCollection, os.path.join(repo_dir, 'content', num))
+			print("Deleting", zf)
+			delete_zip_file(zf)
+			print("Deleting zip dir "+ zf)
+			delete_unzipped_folder(os.path.join(repo_dir,'content',num))
+		except Exception as e: 
+			print("Error in copying, unzipping, or deleting")
+			print(repr(e))
+			with open(errorfn, 'a') as eFile: 
+				eFile.write(repr(e) + "\n")
