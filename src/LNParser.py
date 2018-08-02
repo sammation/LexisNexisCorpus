@@ -69,9 +69,10 @@ if __name__ == "__main__":
 	client = pymongo.MongoClient()
 	db = client.LexisNexis
 	mongoCollection = db["cases"]
-	for i, zf in enumerate(zipfiles[23:]):
+	start = 25
+	for i, zf in enumerate(zipfiles[start:]):
 		print("--------------------------")
-		print("Starting zip file {0}/{1}".format(i, len(zipfiles)))
+		print("Starting zip file {0}/{1}".format(i + start, len(zipfiles)))
 		try:
 			print("Copying", zf)
 			copy_zip_file(zf)
@@ -88,4 +89,4 @@ if __name__ == "__main__":
 			print("Error in copying, unzipping, or deleting")
 			print(repr(e))
 			with open(errorfn, 'a') as eFile: 
-				eFile.write(repr(e) + "\n")
+				eFile.write(str(zf) + " " + repr(e) + "\n")
