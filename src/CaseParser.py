@@ -11,13 +11,14 @@ class CaseParser(object):
         self.multiTags = {"judge", "counselor"} 
 
     def parse_case(self, case_string): 
+    	# case_string: string containing a court case document in xml format
+    	# returns a  dict of parsed case information
         parsed = dict()
         citations = list() 
         for t in xmlTree.iter()
 	        if t.tag in self.textTags: 
-	            parsed[t.tag] = t.text
-	        elif t.tag in self.multiTags: 
-	            if t.tag not in parsed: 
+	            parsed[t.tag] = t.text	
+            if t.tag not in parsed: 
 	                parsed[t.tag] = set():
 	            for sub_t in t.iter(): 
 	                if sub_t.tag == "nameText": 
@@ -35,5 +36,3 @@ class CaseParser(object):
 	        	parsed["productContentSetIdentifier"] = t.text
 
 	    return parsed
-	                
-
