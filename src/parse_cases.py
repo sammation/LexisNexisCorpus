@@ -56,4 +56,5 @@ def parse_case(case_string):
 		parsed["counselors"] = list(counselors) 
 	if paginationSchemes: 
 		parsed["paginationSchemes"] = list(paginationSchemes)
+	parsed["caseText"] = str(case_string)
 	return parsed 		

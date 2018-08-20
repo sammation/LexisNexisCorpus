@@ -29,19 +29,42 @@ xmlConverter = Yahoo()
 progress = [i/10 for i in range(11)]
 errorfn = "errors.txt" 
 
+dest_path = Path("/mnt/usb-10T-1/Data-eta2103/export/") 
+metadata = dest_path / "metadata.tsv" 
+
 def parseDir(mongoCollection, pathToSourceDir):
 	sourceDir = Path(pathToSourceDir)
 	files = [f for f in sourceDir.iterdir() if f.is_file()] 
 	currProgress = set([floor(i * len(files)) for i in progress])
 	for i, f in enumerate(files): 
 		for parsedCase in parseFile(f):
-			try: 
-				#print(parsedCase)
-				mongoCollection.insert_one(parsedCase)
+			try:
+				if "filedDate" in parsedCase: 
+					year = parsedCase["filedDate"]["year"]
+				elif "decisionDate" in parsedCase: 
+					year = parsedCase["decisionDate"]["year"]
+				else: 
+					raise KeyError
+
+				case_id = parsedCase["citeForThisResource"]["citeDefinition"] 
+				jurisSystem = parsedCase["jurisSystem"]["normalizedShortName"] 
+				courtName = parsedCase["courtName"] 
+				fullCaseName = parsedCase["fullCaseName"]
+				docketNumber = parsedCase["docketNumber"] 
+				caseText = parsedCase["caseText"] 
+
+				save_path = dest_path / jurisSystem / courtName / year 
+				save_path.mkdir(parents=True, exist_ok=True)
+				save_path = save_path / case_id
+				with save_path.open('w') as outfile: 
+					outfile.write(caseText) 
+				with metadata.open('a') as outfile: 
+					outfile.write('\t'.join([str(t) for t in (case_id, jurisSystem, courtName, fullCaseName, docketNumber)]) + '\n')
+
 			except Exception as e: 
 				with open(errorfn, 'a') as eFile:
-					print("upload error: " + str(f))
-					eFile.write(','.join((str(f.absolute()), "upload error")))
+					print("extract error: " +  repr(e))
+					eFile.write(','.join((str(f.absolute()), "extract error")))
 					eFile.write("\n")
 		if i in currProgress: 
 			print("{0}/{1} files done in {2}".format(i, len(files), pathToSourceDir))
@@ -69,8 +92,9 @@ if __name__ == "__main__":
 	client = pymongo.MongoClient()
 	db = client.LexisNexis
 	mongoCollection = db["cases"]
-	start = 25
-	for i, zf in enumerate(zipfiles[start:]):
+	start = 0
+	end = 10
+	for i, zf in enumerate(zipfiles[start:end]):
 		print("--------------------------")
 		print("Starting zip file {0}/{1}".format(i + start, len(zipfiles)))
 		try:
