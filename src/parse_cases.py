@@ -8,8 +8,10 @@ def parse_case(case_string):
 	parsed = dict() 
 	judges = set()
 	counselors = set() 
-	citations = list() 
+	citations = list()
+	citeForThisResource = list() 
 	paginationSchemes = set() 
+	
 	xmlTree = ET.fromstring(case_string) 
 	for t in xmlTree.iter(): 
 		if t.tag == "fullCaseName":
@@ -22,10 +24,7 @@ def parse_case(case_string):
 			parsed["jurisSystem"] = t.attrib
 		elif t.tag == "citeForThisResource":
 			t.attrib["citeText"] = t.text
-			parsed["citeForThisResource"] = t.attrib
-		elif t.tag == "filedDate":
-			t.attrib["fullDate"] = ''.join((t.attrib["year"],t.attrib["month"],t.attrib["day"]))
-			parsed["filedDate"] = t.attrib
+			citeForThisResource.append(t.attrib)
 		elif t.tag == "opinion":
 			parsed["opinion"] = t.attrib
 		elif t.tag == "caseOpinionBy":
@@ -41,6 +40,9 @@ def parse_case(case_string):
 		elif t.tag == "keyValue":
 			citation = ''.join(t.attrib["value"].split())
 			citations.append(citation)
+		elif t.tag == "filedDate":
+			t.attrib["fullDate"] = ''.join((t.attrib["year"],t.attrib["month"],t.attrib["day"]))
+			parsed["filedDate"] = t.attrib
 		elif t.tag == "decisionDate":
 			t.attrib["fullDate"] = ''.join((t.attrib["year"],t.attrib["month"],t.attrib["day"]))
 			parsed["decisionDate"] = t.attrib
@@ -48,6 +50,7 @@ def parse_case(case_string):
 			paginationSchemes.update((v for k,v in t.attrib.items()))
 		elif t.tag[-len(source):] == source: 
 			parsed["productContentSetIdentifier"] = t.text
+
 	if judges: 
 		parsed["judges"] = list(judges)
 	if citations:
@@ -56,5 +59,8 @@ def parse_case(case_string):
 		parsed["counselors"] = list(counselors) 
 	if paginationSchemes: 
 		parsed["paginationSchemes"] = list(paginationSchemes)
-	parsed["caseText"] = str(case_string)
+	if citeForThisResource: 
+		parsed["citeForThisResource"] = citeForThisResource
+
+	parsed["caseText"] = '\n'.join((text for text in xmlTree.itertext() if text))
 	return parsed 		

@@ -8,6 +8,7 @@ import os
 import pandas as pd
 from collections import defaultdict, Counter, OrderedDict
 import re
+import string
 import json
 from subprocess import call
 import zipfile as zf
@@ -30,44 +31,57 @@ progress = [i/10 for i in range(11)]
 errorfn = "errors.txt" 
 
 dest_path = Path("/mnt/usb-10T-1/Data-eta2103/export/") 
-metadata = dest_path / "metadata.tsv" 
+parse_errors = dest_path / "parse_errors.txt" 
 
-def parseDir(mongoCollection, pathToSourceDir):
+parsed_tags = 	["fullCaseName", "docketNumber", "courtName", "jurisSystem", "citeForThisResource",
+				 "opinion", "caseOpinionBy", "judges", "citations", "counselors", "paginationSchemes"]
+
+metadata_headers = ["path_jurisSystem", "path_courtName", "path_Year", "path_caseID"] + parsed_tags
+
+punc_re = re.compile('[%s]' % re.escape(string.punctuation))
+
+def parseDir(pathToSourceDir):
 	sourceDir = Path(pathToSourceDir)
 	files = [f for f in sourceDir.iterdir() if f.is_file()] 
 	currProgress = set([floor(i * len(files)) for i in progress])
 	for i, f in enumerate(files): 
 		for parsedCase in parseFile(f):
-			try:
+			try: 
+				case_id = parsedCase["citeForThisResource"][0]
+				jurisSystem = parsedCase["jurisSystem"]["normalizedShortName"].lower() 
+				courtName = '_'.join(punc_re.sub('', parsedCase["courtName"].lower()).split())
 				if "filedDate" in parsedCase: 
 					year = parsedCase["filedDate"]["year"]
 				elif "decisionDate" in parsedCase: 
 					year = parsedCase["decisionDate"]["year"]
 				else: 
 					raise KeyError
+			except KeyError: 
+				with parse_errors.open('a') as errorFile: 
+					errorFile.write(str(f) + '\n')
+				continue
 
-				case_id = parsedCase["citeForThisResource"]["citeDefinition"] 
-				jurisSystem = parsedCase["jurisSystem"]["normalizedShortName"] 
-				courtName = parsedCase["courtName"] 
-				fullCaseName = parsedCase["fullCaseName"]
-				docketNumber = parsedCase["docketNumber"] 
-				caseText = parsedCase["caseText"] 
+			# save parsed data to tsv in jurisSystem folder
+			parsed_data =   [jurisSystem, courtName, year, case_id] + 
+							[str(parsedCase.get(tag, "None")) for tag in parsed_tags]
+			metadata_path = dest_path / jurisSystem 
+			metadata_path.mkdir(parents = True, exists_ok = True) 
+			metadata_filepath = metadata_path / "metadata.tsv" 
+			if not metadata_filepath.is_file(): 
+				with metadata_filepath.open('a') as outfile: 
+					outfile.write('\t'.join(metadata_headers) + '\n') 
+			with metadata_filepath.open('a') as outfile: 
+				outfile.write('\t'.join(parsed_data))
 
-				save_path = dest_path / jurisSystem / courtName / year 
-				save_path.mkdir(parents=True, exist_ok=True)
-				save_path = save_path / case_id
-				with save_path.open('w') as outfile: 
-					outfile.write(caseText) 
-				with metadata.open('a') as outfile: 
-					outfile.write('\t'.join([str(t) for t in (case_id, jurisSystem, courtName, fullCaseName, docketNumber)]) + '\n')
+			# save case text to file
+			caseFilePath = dest_path / jurisSystem / courtName / year 
+			caseFilePath.mkdir(parents = True, exists_ok = True) 
+			caseFile = caseFilePath / case_id	
+			with caseFile.open('w') as outfile: 
+				outfile.write(parsedCase["caseText"])
 
-			except Exception as e: 
-				with open(errorfn, 'a') as eFile:
-					print("extract error: " +  repr(e))
-					eFile.write(','.join((str(f.absolute()), "extract error")))
-					eFile.write("\n")
-		if i in currProgress: 
-			print("{0}/{1} files done in {2}".format(i, len(files), pathToSourceDir))
+
+			
 
 def parseFile(pathFile):
 	parsedCases = [] 
@@ -83,9 +97,6 @@ def parseFile(pathFile):
 					eFile.write(','.join((str(pathFile.absolute()), "parse error")))
 					eFile.write("\n")
 	return parsedCases
-
-def uploadDir(mongoCollection, pathToSourceDir): 
-	parseDir(mongoCollection, pathToSourceDir)	
 
 if __name__ == "__main__": 
 	zipfiles = [z for z in get_all_state_zips() if z.endswith(".zip")]
@@ -104,7 +115,7 @@ if __name__ == "__main__":
 			unzip_file(zf)
 			num = zf[:-4] 
 			print("Parsing cases")
-			uploadDir(mongoCollection, os.path.join(repo_dir, 'content', num))
+			parseDir(os.path.join(repo_dir, 'content', num))
 			print("Deleting", zf)
 			delete_zip_file(zf)
 			print("Deleting zip dir "+ zf)
