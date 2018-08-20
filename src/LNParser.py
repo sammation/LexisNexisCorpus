@@ -57,8 +57,10 @@ def parseDir(pathToSourceDir):
 				else: 
 					raise KeyError
 			except Exception as e: 
+				s = '\t'.join((str(f),repr(e))) + '\n'
+				print(s)
 				with parse_errors.open('a') as errorFile: 
-					errorFile.write('\t'.join((str(f),repr(e))) + '\n')
+					errorFile.write(s)
 				continue
 
 			# save parsed data to tsv in jurisSystem folder
