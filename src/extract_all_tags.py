@@ -15,7 +15,7 @@ import zipfile as zf
 
 repo_dir = os.path.expanduser(r"~/LexisNexisCorpus")
 content_fn = r"content-zip-titles-2018-04-25.csv" 
-zip_dir = os.path.expanduser(r"~/data/content-zip/content/")
+zip_dir = os.path.expanduser(r"~/data/lexis-data/content-zip-1/content/")
 errorzips = []
 
 
