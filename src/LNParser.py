@@ -48,6 +48,7 @@ def parseDir(pathToSourceDir):
 		for parsedCase in parseFile(f):
 			try: 
 				case_id = parsedCase["citeForThisResource"][0]["citeDefinition"]
+				print(parsedCase["citeForThisResource"][0])
 				jurisSystem = parsedCase["jurisSystem"]["normalizedShortName"].lower() 
 				courtName = '_'.join(punc_re.sub('', parsedCase["courtName"].lower()).split())
 				if "filedDate" in parsedCase: 
