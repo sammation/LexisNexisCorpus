@@ -65,7 +65,7 @@ def parseDir(pathToSourceDir):
 			parsed_data =   [jurisSystem, courtName, year, case_id] + \
 							[str(parsedCase.get(tag, "None")) for tag in parsed_tags]
 			metadata_path = dest_path / jurisSystem 
-			metadata_path.mkdir(parents = True, exists_ok = True) 
+			metadata_path.mkdir(parents = True, exist_ok = True) 
 			metadata_filepath = metadata_path / "metadata.tsv" 
 			if not metadata_filepath.is_file(): 
 				with metadata_filepath.open('a') as outfile: 
@@ -75,7 +75,7 @@ def parseDir(pathToSourceDir):
 
 			# save case text to file
 			caseFilePath = dest_path / jurisSystem / courtName / year 
-			caseFilePath.mkdir(parents = True, exists_ok = True) 
+			caseFilePath.mkdir(parents = True, exist_ok = True) 
 			caseFile = caseFilePath / case_id	
 			with caseFile.open('w') as outfile: 
 				outfile.write(parsedCase["caseText"])
