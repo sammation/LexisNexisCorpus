@@ -62,7 +62,7 @@ def parseDir(pathToSourceDir):
 				continue
 
 			# save parsed data to tsv in jurisSystem folder
-			parsed_data =   [jurisSystem, courtName, year, case_id] + 
+			parsed_data =   [jurisSystem, courtName, year, case_id] + \
 							[str(parsedCase.get(tag, "None")) for tag in parsed_tags]
 			metadata_path = dest_path / jurisSystem 
 			metadata_path.mkdir(parents = True, exists_ok = True) 
