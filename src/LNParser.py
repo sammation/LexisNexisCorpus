@@ -56,9 +56,9 @@ def parseDir(pathToSourceDir):
 					year = parsedCase["decisionDate"]["year"]
 				else: 
 					raise KeyError
-			except KeyError: 
+			except Exception as e: 
 				with parse_errors.open('a') as errorFile: 
-					errorFile.write(str(f) + '\n')
+					errorFile.write('\t'.join((str(f),repr(e))) + '\n')
 				continue
 
 			# save parsed data to tsv in jurisSystem folder
