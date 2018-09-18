@@ -8,6 +8,7 @@ import os
 import pandas as pd
 from collections import defaultdict, Counter, OrderedDict
 import re
+import string
 import json
 from subprocess import call
 import zipfile as zf
@@ -29,22 +30,57 @@ xmlConverter = Yahoo()
 progress = [i/10 for i in range(11)]
 errorfn = "errors.txt" 
 
-def parseDir(mongoCollection, pathToSourceDir):
+dest_path = Path("/mnt/usb-10T-1/Data-eta2103/export/district/") 
+parse_errors = dest_path / "parse_errors.txt" 
+
+parsed_tags = 	["fullCaseName", "docketNumber", "courtName", "jurisSystem", "citeForThisResource",
+				 "opinion", "caseOpinionBy", "judges", "citations", "counselors", "paginationSchemes"]
+
+metadata_headers = ["path_jurisSystem", "path_courtName", "path_Year", "path_caseID"] + parsed_tags
+
+punc_re = re.compile('[%s]' % re.escape(string.punctuation))
+
+def parseDir(pathToSourceDir):
 	sourceDir = Path(pathToSourceDir)
 	files = [f for f in sourceDir.iterdir() if f.is_file()] 
 	currProgress = set([floor(i * len(files)) for i in progress])
 	for i, f in enumerate(files): 
 		for parsedCase in parseFile(f):
 			try: 
-				#print(parsedCase)
-				mongoCollection.insert_one(parsedCase)
+				case_id = '_'.join(parsedCase["citeForThisResource"][0]["citeText"].split())
+				jurisSystem = parsedCase["jurisSystem"]["normalizedShortName"].lower() 
+				courtName = '_'.join(punc_re.sub('', parsedCase["courtName"].lower()).split())
+				if "filedDate" in parsedCase: 
+					year = parsedCase["filedDate"]["year"]
+				elif "decisionDate" in parsedCase: 
+					year = parsedCase["decisionDate"]["year"]
+				else: 
+					raise KeyError
 			except Exception as e: 
-				with open(errorfn, 'a') as eFile:
-					print("upload error: " + str(f))
-					eFile.write(','.join((str(f.absolute()), "upload error")))
-					eFile.write("\n")
-		if i in currProgress: 
-			print("{0}/{1} files done in {2}".format(i, len(files), pathToSourceDir))
+				s = '\t'.join((str(f),repr(e))) + '\n'
+				print(s)
+				with parse_errors.open('a') as errorFile: 
+					errorFile.write(s)
+				continue
+
+			# save parsed data to tsv in jurisSystem folder
+			parsed_data =   [jurisSystem, courtName, year, case_id] + \
+							[str(parsedCase.get(tag, "None")) for tag in parsed_tags]
+			metadata_path = dest_path / jurisSystem 
+			metadata_path.mkdir(parents = True, exist_ok = True) 
+			metadata_filepath = metadata_path / "metadata.tsv" 
+			if not metadata_filepath.is_file(): 
+				with metadata_filepath.open('a') as outfile: 
+					outfile.write('\t'.join(metadata_headers) + '\n') 
+			with metadata_filepath.open('a') as outfile: 
+				outfile.write('\t'.join(parsed_data)+'\n')
+
+			# save case text to file
+			caseFilePath = dest_path / jurisSystem / courtName / year 
+			caseFilePath.mkdir(parents = True, exist_ok = True) 
+			caseFile = caseFilePath / case_id	
+			with caseFile.open('w') as outfile: 
+				outfile.write(parsedCase["caseText"])
 
 def parseFile(pathFile):
 	parsedCases = [] 
@@ -61,16 +97,14 @@ def parseFile(pathFile):
 					eFile.write("\n")
 	return parsedCases
 
-def uploadDir(mongoCollection, pathToSourceDir): 
-	parseDir(mongoCollection, pathToSourceDir)	
-
 if __name__ == "__main__": 
-	zipfiles = [z for z in get_all_state_zips() if z.endswith(".zip")]
+	zipfiles = [z for z in get_all_district_zips() if z.endswith(".zip")]
 	client = pymongo.MongoClient()
 	db = client.LexisNexis
 	mongoCollection = db["cases"]
-	start = 25
-	for i, zf in enumerate(zipfiles[start:]):
+	start = 0
+	end = len(zipfiles)
+	for i, zf in enumerate(zipfiles[start:end]):
 		print("--------------------------")
 		print("Starting zip file {0}/{1}".format(i + start, len(zipfiles)))
 		try:
@@ -80,7 +114,7 @@ if __name__ == "__main__":
 			unzip_file(zf)
 			num = zf[:-4] 
 			print("Parsing cases")
-			uploadDir(mongoCollection, os.path.join(repo_dir, 'content', num))
+			parseDir(os.path.join(repo_dir, 'content', num))
 			print("Deleting", zf)
 			delete_zip_file(zf)
 			print("Deleting zip dir "+ zf)

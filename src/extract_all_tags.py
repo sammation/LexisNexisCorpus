@@ -15,7 +15,7 @@ import zipfile as zf
 
 repo_dir = os.path.expanduser(r"~/LexisNexisCorpus")
 content_fn = r"content-zip-titles-2018-04-25.csv" 
-zip_dir = os.path.expanduser(r"~/data/content-zip/content/")
+zip_dir = os.path.expanduser(r"~/data/lexis-data/content-zip-1/content/")
 errorzips = []
 
 
@@ -23,6 +23,10 @@ errorzips = []
 def get_all_state_zips(): 
     names = pd.read_csv(os.path.join(repo_dir, content_fn))
     return names.loc[names["type"] == "states"]["zip"].tolist()
+
+def get_all_district_zips(): 
+    names = pd.read_csv(os.path.join(repo_dir, content_fn))
+    return names.loc[names["type"] == "district"]["zip"].tolist()
 
 def copy_zip_file(zip_fn): 
     copy2(os.path.join(zip_dir, zip_fn), repo_dir)
