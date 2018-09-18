@@ -73,7 +73,7 @@ def parseDir(pathToSourceDir):
 				with metadata_filepath.open('a') as outfile: 
 					outfile.write('\t'.join(metadata_headers) + '\n') 
 			with metadata_filepath.open('a') as outfile: 
-				outfile.write('\t'.join(parsed_data))
+				outfile.write('\t'.join(parsed_data)+'\n')
 
 			# save case text to file
 			caseFilePath = dest_path / jurisSystem / courtName / year 
@@ -81,9 +81,6 @@ def parseDir(pathToSourceDir):
 			caseFile = caseFilePath / case_id	
 			with caseFile.open('w') as outfile: 
 				outfile.write(parsedCase["caseText"])
-
-
-			
 
 def parseFile(pathFile):
 	parsedCases = [] 
@@ -106,7 +103,7 @@ if __name__ == "__main__":
 	db = client.LexisNexis
 	mongoCollection = db["cases"]
 	start = 0
-	end = 10
+	end = len(zipfiles)
 	for i, zf in enumerate(zipfiles[start:end]):
 		print("--------------------------")
 		print("Starting zip file {0}/{1}".format(i + start, len(zipfiles)))

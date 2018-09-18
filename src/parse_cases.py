@@ -62,5 +62,6 @@ def parse_case(case_string):
 	if citeForThisResource: 
 		parsed["citeForThisResource"] = citeForThisResource
 
-	parsed["caseText"] = '\n'.join((text for text in xmlTree.itertext() if text))
+	#parsed["caseText"] = '\n'.join((text for text in xmlTree.itertext() if text))
+	parsed["caseText"] = case_string
 	return parsed 		
