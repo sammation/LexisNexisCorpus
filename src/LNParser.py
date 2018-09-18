@@ -98,7 +98,7 @@ def parseFile(pathFile):
 	return parsedCases
 
 if __name__ == "__main__": 
-	zipfiles = [z for z in get_all_state_zips() if z.endswith(".zip")]
+	zipfiles = [z for z in get_all_district_zips() if z.endswith(".zip")]
 	client = pymongo.MongoClient()
 	db = client.LexisNexis
 	mongoCollection = db["cases"]

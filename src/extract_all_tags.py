@@ -24,6 +24,10 @@ def get_all_state_zips():
     names = pd.read_csv(os.path.join(repo_dir, content_fn))
     return names.loc[names["type"] == "states"]["zip"].tolist()
 
+def get_all_district_zips(): 
+    names = pd.read_csv(os.path.join(repo_dir, content_fn))
+    return names.loc[names["type"] == "district"]["zip"].tolist()
+
 def copy_zip_file(zip_fn): 
     copy2(os.path.join(zip_dir, zip_fn), repo_dir)
     
