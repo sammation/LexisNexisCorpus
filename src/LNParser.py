@@ -30,7 +30,7 @@ xmlConverter = Yahoo()
 progress = [i/10 for i in range(11)]
 errorfn = "errors.txt" 
 
-dest_path = Path("/mnt/usb-10T-1/Data-eta2103/export/") 
+dest_path = Path("/mnt/usb-10T-1/Data-eta2103/export/district/") 
 parse_errors = dest_path / "parse_errors.txt" 
 
 parsed_tags = 	["fullCaseName", "docketNumber", "courtName", "jurisSystem", "citeForThisResource",
