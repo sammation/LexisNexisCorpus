@@ -20,10 +20,12 @@ from xml.etree import ElementTree
 from math import floor
 from parse_cases import parse_case
 
+# paths to data
 repo_dir = os.path.expanduser(r"~/LexisNexisCorpus")
 zip_dir = os.path.expanduser(r"~/data/content-zip/content")
 states_summ_fn = "states_counts.csv" 
 
+# re which matches a courtCaseDoc
 courtCaseRE = r"<courtCaseDoc.*?/courtCaseDoc>"
 
 xmlConverter = Yahoo()
@@ -33,6 +35,7 @@ errorfn = "errors.txt"
 dest_path = Path("/mnt/usb-10T-1/Data-eta2103/export/district/") 
 parse_errors = dest_path / "parse_errors.txt" 
 
+# tags to look for in courtCaseDoc
 parsed_tags = 	["fullCaseName", "docketNumber", "courtName", "jurisSystem", "citeForThisResource",
 				 "opinion", "caseOpinionBy", "judges", "citations", "counselors", "paginationSchemes"]
 
@@ -41,6 +44,7 @@ metadata_headers = ["path_jurisSystem", "path_courtName", "path_Year", "path_cas
 punc_re = re.compile('[%s]' % re.escape(string.punctuation))
 
 def parseDir(pathToSourceDir):
+	'''save the results of parsing a given directory'''
 	sourceDir = Path(pathToSourceDir)
 	files = [f for f in sourceDir.iterdir() if f.is_file()] 
 	currProgress = set([floor(i * len(files)) for i in progress])
@@ -83,9 +87,10 @@ def parseDir(pathToSourceDir):
 				outfile.write(parsedCase["caseText"])
 
 def parseFile(pathFile):
+	'''parse all cases in a given file'''
 	parsedCases = [] 
 	with pathFile.open() as infile: 
-		for m in re.findall(courtCaseRE, infile.read()): 
+		for m in re.findall(courtCaseRE, infile.read()): # for each case in the file
 			try: 
 				parsedCase = parse_case(m) 
 				parsedCases.append(parsedCase) 
