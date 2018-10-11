@@ -5,6 +5,7 @@ from collections import defaultdict
 source = "}source"
 
 def parse_case(case_string):
+	'''extract relevant information from a case_string'''
 	parsed = dict() 
 	judges = set()
 	counselors = set() 
@@ -12,8 +13,12 @@ def parse_case(case_string):
 	citeForThisResource = list() 
 	paginationSchemes = set() 
 	
+	# case string is xml
 	xmlTree = ET.fromstring(case_string) 
-	for t in xmlTree.iter(): 
+	# for each field in the resulting xml tree:
+	# 	if we care about it:
+	#		add it to the parsed dict
+	for t in xmlTree.iter():
 		if t.tag == "fullCaseName":
 			parsed["fullCaseName"] = t.text
 		elif t.tag == "docketNumber":
@@ -51,6 +56,7 @@ def parse_case(case_string):
 		elif t.tag[-len(source):] == source: 
 			parsed["productContentSetIdentifier"] = t.text
 
+	# add the elements that may appear more than once and only if they appeared
 	if judges: 
 		parsed["judges"] = list(judges)
 	if citations:
@@ -63,5 +69,5 @@ def parse_case(case_string):
 		parsed["citeForThisResource"] = citeForThisResource
 
 	#parsed["caseText"] = '\n'.join((text for text in xmlTree.itertext() if text))
-	parsed["caseText"] = case_string
+	parsed["caseText"] = case_string # add the entire case string 
 	return parsed 		
